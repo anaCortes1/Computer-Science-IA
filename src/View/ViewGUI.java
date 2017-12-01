@@ -169,7 +169,7 @@ public class ViewGUI extends javax.swing.JFrame
            //System.out.printf("Name : %s\n", name);  //output what you read from excel
            //System.out.printf("ID : %d\n", IDNumber);
            //System.out.println();
-           // test
+           // test 123
       }
     } catch(IOException e){}
     }
