@@ -6,12 +6,9 @@
 package View;
 import java.io.FileInputStream;
 import java.io.IOException;
-import static java.lang.String.format;
-import java.util.HashMap;
-import java.util.Map;
 import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.swing.table.TableModel;
+import javax.swing.table.DefaultTableModel;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -45,12 +42,18 @@ public class ViewGUI extends javax.swing.JFrame
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
         panChooser = new javax.swing.JPanel();
+        lblTitle = new javax.swing.JLabel();
+        lblIcon = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnuImport = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("IB Sophomores dbs");
+        setBackground(new java.awt.Color(219, 237, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(new java.awt.Color(255, 255, 255));
+        setResizable(false);
 
         jtData.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][]
@@ -101,6 +104,12 @@ public class ViewGUI extends javax.swing.JFrame
             .addGap(0, 17, Short.MAX_VALUE)
         );
 
+        lblTitle.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 18)); // NOI18N
+        lblTitle.setText("Incoming IB Sophomores");
+
+        lblIcon.setIcon(new javax.swing.ImageIcon("H:\\Comp sci IA\\Webp.net-resizeimage.png")); // NOI18N
+        lblIcon.setText("ib");
+
         jMenu1.setText("File");
 
         mnuImport.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -123,22 +132,33 @@ public class ViewGUI extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 78, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
+                        .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblTitle)))
+                .addGap(0, 136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(12, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(lblIcon))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblTitle)))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -160,16 +180,18 @@ public class ViewGUI extends javax.swing.JFrame
          XSSFSheet sheet = workbook.getSheetAt(0);  //this gets first sheet in workbook
 
          XSSFRow row;
-         for(int r = 0; r < 3; r++)                 //rows start at 0, so do cells
+         for(int r = 1; r < sheet.getLastRowNum()+1 ; r++)                 //rows start at 0, so do cells
          {
            row = sheet.getRow(r);
            name = row.getCell(0).getStringCellValue();   //assumes first cell is a String
-           IDNumber = (int) row.getCell(3).getNumericCellValue();  //fourth cell is an int
+           IDNumber = (int) row.getCell(1).getNumericCellValue();  //fourth cell is an int
 
            //System.out.printf("Name : %s\n", name);  //output what you read from excel
            //System.out.printf("ID : %d\n", IDNumber);
            //System.out.println();
            // test 123
+           DefaultTableModel model = (DefaultTableModel) jtData.getModel();
+           model.addRow(new Object [] {IDNumber, name});
       }
     } catch(IOException e){}
     }
@@ -225,6 +247,8 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtData;
+    private javax.swing.JLabel lblIcon;
+    private javax.swing.JLabel lblTitle;
     private javax.swing.JMenuItem mnuImport;
     private javax.swing.JPanel panChooser;
     // End of variables declaration//GEN-END:variables
