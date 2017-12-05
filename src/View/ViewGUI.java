@@ -189,7 +189,7 @@ public class ViewGUI extends javax.swing.JFrame
            //System.out.printf("Name : %s\n", name);  //output what you read from excel
            //System.out.printf("ID : %d\n", IDNumber);
            //System.out.println();
-           // test 123
+           // butt crack hahahahah!!HWHSu2ebgu1W@!!!!
            DefaultTableModel model = (DefaultTableModel) jtData.getModel();
            model.addRow(new Object [] {IDNumber, name});
       }
