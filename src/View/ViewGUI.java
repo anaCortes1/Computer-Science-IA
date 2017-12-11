@@ -7,8 +7,10 @@ package View;
 import java.io.FileInputStream;
 import java.io.IOException;
 import javax.swing.JFileChooser;
+import javax.swing.RowFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -44,9 +46,11 @@ public class ViewGUI extends javax.swing.JFrame
         panChooser = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
         lblIcon = new javax.swing.JLabel();
+        txtSearchBar = new javax.swing.JTextField();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnuImport = new javax.swing.JMenuItem();
+        mnuCreateDataSheet = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("IB Sophomores dbs");
@@ -110,6 +114,14 @@ public class ViewGUI extends javax.swing.JFrame
         lblIcon.setIcon(new javax.swing.ImageIcon("H:\\Comp sci IA\\Webp.net-resizeimage.png")); // NOI18N
         lblIcon.setText("ib");
 
+        txtSearchBar.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyReleased(java.awt.event.KeyEvent evt)
+            {
+                txtSearchBarKeyReleased(evt);
+            }
+        });
+
         jMenu1.setText("File");
 
         mnuImport.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
@@ -123,6 +135,17 @@ public class ViewGUI extends javax.swing.JFrame
         });
         jMenu1.add(mnuImport);
 
+        mnuCreateDataSheet.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        mnuCreateDataSheet.setText("Create Data Sheet");
+        mnuCreateDataSheet.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                mnuCreateDataSheetActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mnuCreateDataSheet);
+
         jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
@@ -132,7 +155,7 @@ public class ViewGUI extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(114, 114, 114)
@@ -141,22 +164,23 @@ public class ViewGUI extends javax.swing.JFrame
                         .addGap(121, 121, 121)
                         .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTitle)))
+                        .addComponent(lblTitle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(lblIcon))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblTitle)))
+                    .addComponent(lblIcon)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblTitle)
+                        .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
                 .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -189,13 +213,31 @@ public class ViewGUI extends javax.swing.JFrame
            //System.out.printf("Name : %s\n", name);  //output what you read from excel
            //System.out.printf("ID : %d\n", IDNumber);
            //System.out.println();
-           // butt crack hahahahah!!HWHSu2ebgu1W@!!!!
+          //following code connects table to excel file
            DefaultTableModel model = (DefaultTableModel) jtData.getModel();
            model.addRow(new Object [] {IDNumber, name});
       }
     } catch(IOException e){}
     }
     }//GEN-LAST:event_mnuImportActionPerformed
+
+    private void mnuCreateDataSheetActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mnuCreateDataSheetActionPerformed
+    {//GEN-HEADEREND:event_mnuCreateDataSheetActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnuCreateDataSheetActionPerformed
+
+    private void filter(String query)
+    {
+      TableRowSorter<DefaultTableModel> tr = new TableRowSorter<> ((DefaultTableModel) jtData.getModel());
+      jtData.setRowSorter(tr); 
+      tr.setRowFilter(RowFilter.regexFilter("(?i)"+query));
+    }
+    
+    private void txtSearchBarKeyReleased(java.awt.event.KeyEvent evt)//GEN-FIRST:event_txtSearchBarKeyReleased
+    {//GEN-HEADEREND:event_txtSearchBarKeyReleased
+        String query = txtSearchBar.getText();
+        filter(query); 
+    }//GEN-LAST:event_txtSearchBarKeyReleased
 
     /**
      * @param args the command line arguments
@@ -249,7 +291,9 @@ public class ViewGUI extends javax.swing.JFrame
     public javax.swing.JTable jtData;
     private javax.swing.JLabel lblIcon;
     private javax.swing.JLabel lblTitle;
+    private javax.swing.JMenuItem mnuCreateDataSheet;
     private javax.swing.JMenuItem mnuImport;
     private javax.swing.JPanel panChooser;
+    private javax.swing.JTextField txtSearchBar;
     // End of variables declaration//GEN-END:variables
 }
