@@ -7,7 +7,12 @@ package View;
 import java.io.FileInputStream;
 import java.io.IOException;
 import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
 import javax.swing.RowFilter;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -26,10 +31,30 @@ public class ViewGUI extends javax.swing.JFrame
     /**
      * Creates new form ViewGUI
      */
-    public ViewGUI()
-    {
-        initComponents();
-    }
+        public ViewGUI()
+        {
+            initComponents();
+            jtData.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
+        @Override
+        public void valueChanged(ListSelectionEvent event) {
+            if(! jtData.getSelectionModel().isSelectionEmpty())
+                    {
+                        int selectedRow = jtData.getSelectionModel().getMinSelectionIndex();
+                        final JPanel panel = new JPanel();
+                        final JRadioButton button1 = new JRadioButton("pre-Calculus A");
+                        final JRadioButton button2 = new JRadioButton("pre-Calculus B");
+
+                        panel.add(button1);
+                        panel.add(button2);
+
+                        JOptionPane.showMessageDialog(null, panel);
+                        //JOptionPane.showMessageDialog(null, "Selected Row" + selectedRow);
+                    }
+            //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
+        }
+    });
+            
+        }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -47,6 +72,7 @@ public class ViewGUI extends javax.swing.JFrame
         lblTitle = new javax.swing.JLabel();
         lblIcon = new javax.swing.JLabel();
         txtSearchBar = new javax.swing.JTextField();
+        btnSave = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mnuImport = new javax.swing.JMenuItem();
@@ -59,6 +85,7 @@ public class ViewGUI extends javax.swing.JFrame
         setForeground(new java.awt.Color(255, 255, 255));
         setResizable(false);
 
+        jtData.setBackground(new java.awt.Color(204, 233, 247));
         jtData.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][]
             {
@@ -114,6 +141,7 @@ public class ViewGUI extends javax.swing.JFrame
         lblIcon.setIcon(new javax.swing.ImageIcon("H:\\Comp sci IA\\Webp.net-resizeimage.png")); // NOI18N
         lblIcon.setText("ib");
 
+        txtSearchBar.setForeground(new java.awt.Color(0, 0, 0));
         txtSearchBar.addKeyListener(new java.awt.event.KeyAdapter()
         {
             public void keyReleased(java.awt.event.KeyEvent evt)
@@ -121,6 +149,8 @@ public class ViewGUI extends javax.swing.JFrame
                 txtSearchBarKeyReleased(evt);
             }
         });
+
+        btnSave.setText("Save");
 
         jMenu1.setText("File");
 
@@ -157,17 +187,19 @@ public class ViewGUI extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(114, 114, 114)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(121, 121, 121)
                         .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblTitle)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 136, Short.MAX_VALUE))
+                        .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(114, 114, 114)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnSave)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -179,8 +211,10 @@ public class ViewGUI extends javax.swing.JFrame
                         .addComponent(lblTitle)
                         .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSave)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
                 .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -223,7 +257,7 @@ public class ViewGUI extends javax.swing.JFrame
 
     private void mnuCreateDataSheetActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mnuCreateDataSheetActionPerformed
     {//GEN-HEADEREND:event_mnuCreateDataSheetActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_mnuCreateDataSheetActionPerformed
 
     private void filter(String query)
@@ -285,6 +319,7 @@ public class ViewGUI extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSave;
     public javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
