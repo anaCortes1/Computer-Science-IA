@@ -54,7 +54,7 @@ public class ViewGUI extends javax.swing.JFrame
         }
     });
             
-        }
+        } //poo
 
     /**
      * This method is called from within the constructor to initialize the form.
