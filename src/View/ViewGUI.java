@@ -53,8 +53,7 @@ public class ViewGUI extends javax.swing.JFrame
             //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
         }
     });
-            
-        } //poo
+          
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -224,7 +223,7 @@ public class ViewGUI extends javax.swing.JFrame
 
     private void mnuImportActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mnuImportActionPerformed
     {//GEN-HEADEREND:event_mnuImportActionPerformed
-     JFileChooser chooser = new JFileChooser();
+     JFileChooser chooser = new JFileChooser(); //poo
      FileNameExtensionFilter filter = new FileNameExtensionFilter("Excel files", "xlsx");
      chooser.setFileFilter(filter);
      int returnVal = chooser.showOpenDialog(panChooser);
