@@ -272,8 +272,12 @@ public class ViewGUI extends javax.swing.JFrame
           FileInputStream fis = new FileInputStream(new File(chooser.getSelectedFile().getAbsolutePath()));
 		XSSFWorkbook workbook = new XSSFWorkbook (fis);
 		XSSFSheet sheet = workbook.getSheetAt(0);
-		//Creates First Row
-                //English classes
+                
+		/*------------------
+                  Creates First Row
+                --------------------*/
+                
+                //English
 		XSSFRow row1 = sheet.createRow(0);
 		XSSFCell r1c1 = row1.createCell(2);
 		r1c1.setCellValue("ENG 1A");
@@ -291,7 +295,8 @@ public class ViewGUI extends javax.swing.JFrame
 		r1c7.setCellValue("ENG 4A");
                 XSSFCell r1c8 = row1.createCell(9);
 		r1c8.setCellValue("ENG 4B");
-                //Math classes
+                
+                //Math 
                 XSSFCell r1c9 = row1.createCell(10);
 		r1c9.setCellValue("ALG A");
                 XSSFCell r1c10 = row1.createCell(11);
@@ -314,21 +319,128 @@ public class ViewGUI extends javax.swing.JFrame
 		r1c18.setCellValue("HLMATH B");
                 XSSFCell r1c19 = row1.createCell(20);
 		r1c19.setCellValue("HLMATH C");
+                
                 //Science 
                 XSSFCell r1c20 = row1.createCell(21);
-		r1c20.setCellValue("SCI1 A");
+		r1c20.setCellValue("BIO A");
                 XSSFCell r1c21 = row1.createCell(22);
-		r1c21.setCellValue("SCI1 B");
+		r1c21.setCellValue("BIO B");
                 XSSFCell r1c22 = row1.createCell(23);
-		r1c22.setCellValue("SC12 A");
+		r1c22.setCellValue("CHEM A");
                 XSSFCell r1c23 = row1.createCell(24);
-		r1c23.setCellValue("SCI2 B");
+		r1c23.setCellValue("CHEM B");
                 XSSFCell r1c24 = row1.createCell(25);
 		r1c24.setCellValue("SCI3 A");
                 XSSFCell r1c25 = row1.createCell(26);
 		r1c25.setCellValue("SCI3 B");
                 XSSFCell r1c26 = row1.createCell(27);
 		r1c26.setCellValue("SCI3 C");
+                XSSFCell r1c27 = row1.createCell(28);
+		r1c27.setCellValue("SCI4 A");
+                XSSFCell r1c28 = row1.createCell(29);
+		r1c28.setCellValue("SCI4 B");
+                XSSFCell r1c29 = row1.createCell(30);
+		r1c29.setCellValue("SCI4 C");
+                
+                //Social Studies
+                XSSFCell r1c30 = row1.createCell(31);
+                r1c30.setCellValue("WORLD GEO A");
+                XSSFCell r1c31 = row1.createCell(32);
+                r1c31.setCellValue("WORLD GEO B");
+                XSSFCell r1c32 = row1.createCell(33);
+                r1c32.setCellValue("WORLD HIST A");
+                XSSFCell r1c33 = row1.createCell(34);
+                r1c33.setCellValue("WORLD HIST B");
+                XSSFCell r1c34 = row1.createCell(35);
+                r1c34.setCellValue("HOA A");
+                XSSFCell r1c35 = row1.createCell(36);
+                r1c35.setCellValue("HOA B");
+                XSSFCell r1c36 = row1.createCell(37);
+                r1c36.setCellValue("2OTH CENTURY A");
+                XSSFCell r1c37 = row1.createCell(38);
+                r1c37.setCellValue("20TH CENTURY B");
+                XSSFCell r1c38 = row1.createCell(39);
+                r1c38.setCellValue("ECON AP/IB/DUAL");
+                
+                //Health
+                XSSFCell r1c39 = row1.createCell(40);
+                r1c39.setCellValue("HEALTH");
+                XSSFCell r1c40 = row1.createCell(41);
+                r1c40.setCellValue("HUM SERVICE A");
+                XSSFCell r1c41 = row1.createCell(42);
+                r1c41.setCellValue("HUM SERVICE B");
+                XSSFCell r1c42 = row1.createCell(43);
+                r1c42.setCellValue("HLTH SCIENCE A");
+                XSSFCell r1c43 = row1.createCell(44);
+                r1c43.setCellValue("HLTH SCIENCE B");
+                XSSFCell r1c44 = row1.createCell(45);
+                r1c44.setCellValue("COSMO1 A");
+                XSSFCell r1c45 = row1.createCell(46);
+                r1c45.setCellValue("COSMO1 B");
+                XSSFCell r1c46 = row1.createCell(47);
+                r1c46.setCellValue("COSMO1 C");
+                XSSFCell r1c47 = row1.createCell(48);
+                r1c47.setCellValue("COUN/MEN HLTH A");
+                XSSFCell r1c48 = row1.createCell(49);
+                r1c48.setCellValue("COUN/MEN HLTH B");
+                
+                //PE/Athletics
+                XSSFCell r1c49 = row1.createCell(50);
+                r1c49.setCellValue("PE/ATHLT A");
+                XSSFCell r1c50 = row1.createCell(51);
+                r1c50.setCellValue("PE/ATHLT B");
+                
+                //Technology
+                XSSFCell r1c51 = row1.createCell(52);
+                r1c51.setCellValue("TECH A");
+                XSSFCell r1c52 = row1.createCell(53);
+                r1c52.setCellValue("TECH B");
+                
+                //Fine Arts
+                XSSFCell r1c53 = row1.createCell(54);
+                r1c53.setCellValue("ART A");
+                XSSFCell r1c54 = row1.createCell(55);
+                r1c54.setCellValue("ART B");
+                XSSFCell r1c55 = row1.createCell(56);
+                r1c55.setCellValue("BAND A");
+                XSSFCell r1c56 = row1.createCell(57);
+                r1c56.setCellValue("BAND B");
+                XSSFCell r1c57 = row1.createCell(58);
+                r1c57.setCellValue("CHOIR A");
+                XSSFCell r1c58 = row1.createCell(59);
+                r1c58.setCellValue("CHOIR B");
+                XSSFCell r1c59 = row1.createCell(60);
+                r1c59.setCellValue("DANCE A");
+                XSSFCell r1c60 = row1.createCell(61);
+                r1c60.setCellValue("DANCE B");
+                XSSFCell r1c61 = row1.createCell(62);
+                r1c61.setCellValue("ORCH A");
+                XSSFCell r1c62 = row1.createCell(63);
+                r1c62.setCellValue("ORCH B");
+                XSSFCell r1c63 = row1.createCell(64);
+                r1c63.setCellValue("THEATER A");
+                XSSFCell r1c64 = row1.createCell(65);
+                r1c64.setCellValue("THEATER B");
+                
+                //World Languages
+                XSSFCell r1c65 = row1.createCell(66);
+                r1c65.setCellValue("LANG1 A");
+                XSSFCell r1c66 = row1.createCell(67);
+                r1c66.setCellValue("LANG1 B");
+                XSSFCell r1c67 = row1.createCell(68);
+                r1c67.setCellValue("LANG2 A");
+                XSSFCell r1c68 = row1.createCell(69);
+                r1c68.setCellValue("LANG2 B");
+                
+                //Speech
+                XSSFCell r1c69 = row1.createCell(70);
+                r1c69.setCellValue("PROF COMM");
+                
+                //TOK (Theory of Knowledge)
+                XSSFCell r1c70 = row1.createCell(71);
+                r1c70.setCellValue("TOK A");
+                XSSFCell r1c71 = row1.createCell(72);
+                r1c71.setCellValue("TOK B");
                 
 		fis.close();
 		FileOutputStream fos =new FileOutputStream(new File("newfile.xlsx"));
