@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package View;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
@@ -16,6 +18,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -50,10 +53,12 @@ public class ViewGUI extends javax.swing.JFrame
                         JOptionPane.showMessageDialog(null, panel);
                         //JOptionPane.showMessageDialog(null, "Selected Row" + selectedRow);
                     }
-            //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
-        }
-    });
-          
+                //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
+            }
+
+                });
+                        }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -223,7 +228,7 @@ public class ViewGUI extends javax.swing.JFrame
 
     private void mnuImportActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mnuImportActionPerformed
     {//GEN-HEADEREND:event_mnuImportActionPerformed
-     JFileChooser chooser = new JFileChooser(); //poo
+     JFileChooser chooser = new JFileChooser();
      FileNameExtensionFilter filter = new FileNameExtensionFilter("Excel files", "xlsx");
      chooser.setFileFilter(filter);
      int returnVal = chooser.showOpenDialog(panChooser);
@@ -256,7 +261,84 @@ public class ViewGUI extends javax.swing.JFrame
 
     private void mnuCreateDataSheetActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_mnuCreateDataSheetActionPerformed
     {//GEN-HEADEREND:event_mnuCreateDataSheetActionPerformed
-        
+     File file = new File("newfile.xlsx");
+     JFileChooser chooser = new JFileChooser();
+     FileNameExtensionFilter filter = new FileNameExtensionFilter("Excel files", "xlsx");
+     chooser.setFileFilter(filter);
+     int returnVal = chooser.showOpenDialog(panChooser);
+     if(returnVal == JFileChooser.APPROVE_OPTION)
+        try
+        {
+          FileInputStream fis = new FileInputStream(new File(chooser.getSelectedFile().getAbsolutePath()));
+		XSSFWorkbook workbook = new XSSFWorkbook (fis);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		//Creates First Row
+                //English classes
+		XSSFRow row1 = sheet.createRow(0);
+		XSSFCell r1c1 = row1.createCell(2);
+		r1c1.setCellValue("ENG 1A");
+		XSSFCell r1c2 = row1.createCell(3);
+		r1c2.setCellValue("ENG 1B");
+		XSSFCell r1c3 = row1.createCell(4);
+		r1c3.setCellValue("ENG 2A");
+                XSSFCell r1c4 = row1.createCell(5);
+		r1c4.setCellValue("ENG 2B");
+                XSSFCell r1c5 = row1.createCell(6);
+		r1c5.setCellValue("ENG 3A");
+                XSSFCell r1c6 = row1.createCell(7);
+		r1c6.setCellValue("ENG 3B");
+                XSSFCell r1c7 = row1.createCell(8);
+		r1c7.setCellValue("ENG 4A");
+                XSSFCell r1c8 = row1.createCell(9);
+		r1c8.setCellValue("ENG 4B");
+                //Math classes
+                XSSFCell r1c9 = row1.createCell(10);
+		r1c9.setCellValue("ALG A");
+                XSSFCell r1c10 = row1.createCell(11);
+		r1c10.setCellValue("ALG B");
+                XSSFCell r1c11= row1.createCell(12);
+		r1c11.setCellValue("GEOM A");
+                XSSFCell r1c12= row1.createCell(13);
+		r1c12.setCellValue("GEOM B");
+                XSSFCell r1c13 = row1.createCell(14);
+		r1c13.setCellValue("ALG2 A");
+                XSSFCell r1c14 = row1.createCell(15);
+		r1c14.setCellValue("ALG2 B");
+                XSSFCell r1c15 = row1.createCell(16);
+		r1c15.setCellValue("SLMATH A");
+                XSSFCell r1c16 = row1.createCell(17);
+		r1c16.setCellValue("SLMATH B");
+                XSSFCell r1c17 = row1.createCell(18);
+		r1c17.setCellValue("HLMATCH A");
+                XSSFCell r1c18 = row1.createCell(19);
+		r1c18.setCellValue("HLMATH B");
+                XSSFCell r1c19 = row1.createCell(20);
+		r1c19.setCellValue("HLMATH C");
+                //Science 
+                XSSFCell r1c20 = row1.createCell(21);
+		r1c20.setCellValue("SCI1 A");
+                XSSFCell r1c21 = row1.createCell(22);
+		r1c21.setCellValue("SCI1 B");
+                XSSFCell r1c22 = row1.createCell(23);
+		r1c22.setCellValue("SC12 A");
+                XSSFCell r1c23 = row1.createCell(24);
+		r1c23.setCellValue("SCI2 B");
+                XSSFCell r1c24 = row1.createCell(25);
+		r1c24.setCellValue("SCI3 A");
+                XSSFCell r1c25 = row1.createCell(26);
+		r1c25.setCellValue("SCI3 B");
+                XSSFCell r1c26 = row1.createCell(27);
+		r1c26.setCellValue("SCI3 C");
+                
+		fis.close();
+		FileOutputStream fos =new FileOutputStream(new File("newfile.xlsx"));
+	        workbook.write(fos);
+	        fos.close();
+		System.out.println("Done");
+            
+        } catch(IOException e){
+                System.out.println(e);
+                }
     }//GEN-LAST:event_mnuCreateDataSheetActionPerformed
 
     private void filter(String query)
