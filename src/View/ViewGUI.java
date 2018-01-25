@@ -78,6 +78,17 @@ public class ViewGUI extends javax.swing.JFrame
 
         jDialoge = new javax.swing.JDialog();
         jButton1 = new javax.swing.JButton();
+        lblEng = new javax.swing.JLabel();
+        lblMath = new javax.swing.JLabel();
+        lblSci = new javax.swing.JLabel();
+        lblSS = new javax.swing.JLabel();
+        lblHealth = new javax.swing.JLabel();
+        lblAth = new javax.swing.JLabel();
+        lblTech = new javax.swing.JLabel();
+        lblArts = new javax.swing.JLabel();
+        lblLang = new javax.swing.JLabel();
+        lblSpeech = new javax.swing.JLabel();
+        lblTOK = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
         panChooser = new javax.swing.JPanel();
@@ -89,7 +100,7 @@ public class ViewGUI extends javax.swing.JFrame
         mnuImport = new javax.swing.JMenuItem();
         mnuCreateDataSheet = new javax.swing.JMenuItem();
 
-        jDialoge.setMinimumSize(new java.awt.Dimension(400, 200));
+        jDialoge.setMinimumSize(new java.awt.Dimension(860, 530));
 
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener()
@@ -100,19 +111,91 @@ public class ViewGUI extends javax.swing.JFrame
             }
         });
 
+        lblEng.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblEng.setText("English");
+
+        lblMath.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblMath.setText("Math");
+
+        lblSci.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSci.setText("Science");
+
+        lblSS.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSS.setText("Social Studies");
+
+        lblHealth.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblHealth.setText("Health");
+
+        lblAth.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblAth.setText("PE/Athletics");
+
+        lblTech.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblTech.setText("Technology");
+
+        lblArts.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblArts.setText("Fine Arts");
+
+        lblLang.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblLang.setText("World Lang.");
+
+        lblSpeech.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSpeech.setText("Speech");
+
+        lblTOK.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblTOK.setText("TOK");
+
         javax.swing.GroupLayout jDialogeLayout = new javax.swing.GroupLayout(jDialoge.getContentPane());
         jDialoge.getContentPane().setLayout(jDialogeLayout);
         jDialogeLayout.setHorizontalGroup(
             jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
-                .addContainerGap(752, Short.MAX_VALUE)
-                .addComponent(jButton1)
+            .addGroup(jDialogeLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1))
+                    .addGroup(jDialogeLayout.createSequentialGroup()
+                        .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMath)
+                            .addComponent(lblSci)
+                            .addComponent(lblSS)
+                            .addComponent(lblHealth)
+                            .addComponent(lblAth)
+                            .addComponent(lblTech)
+                            .addComponent(lblArts)
+                            .addComponent(lblLang)
+                            .addComponent(lblSpeech)
+                            .addComponent(lblTOK)
+                            .addComponent(lblEng))
+                        .addGap(0, 715, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jDialogeLayout.setVerticalGroup(
             jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
-                .addContainerGap(439, Short.MAX_VALUE)
+                .addGap(44, 44, 44)
+                .addComponent(lblEng)
+                .addGap(18, 18, 18)
+                .addComponent(lblMath)
+                .addGap(18, 18, 18)
+                .addComponent(lblSci)
+                .addGap(18, 18, 18)
+                .addComponent(lblSS)
+                .addGap(18, 18, 18)
+                .addComponent(lblHealth)
+                .addGap(18, 18, 18)
+                .addComponent(lblAth)
+                .addGap(18, 18, 18)
+                .addComponent(lblTech)
+                .addGap(18, 18, 18)
+                .addComponent(lblArts)
+                .addGap(18, 18, 18)
+                .addComponent(lblLang)
+                .addGap(18, 18, 18)
+                .addComponent(lblSpeech)
+                .addGap(18, 18, 18)
+                .addComponent(lblTOK)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -564,7 +647,18 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtData;
+    private javax.swing.JLabel lblArts;
+    private javax.swing.JLabel lblAth;
+    private javax.swing.JLabel lblEng;
+    private javax.swing.JLabel lblHealth;
     private javax.swing.JLabel lblIcon;
+    private javax.swing.JLabel lblLang;
+    private javax.swing.JLabel lblMath;
+    private javax.swing.JLabel lblSS;
+    private javax.swing.JLabel lblSci;
+    private javax.swing.JLabel lblSpeech;
+    private javax.swing.JLabel lblTOK;
+    private javax.swing.JLabel lblTech;
     private javax.swing.JLabel lblTitle;
     private javax.swing.JMenuItem mnuCreateDataSheet;
     private javax.swing.JMenuItem mnuImport;
