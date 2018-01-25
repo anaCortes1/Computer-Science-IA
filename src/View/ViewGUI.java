@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package View;
+import java.awt.EventQueue;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
@@ -35,28 +39,30 @@ public class ViewGUI extends javax.swing.JFrame
      * Creates new form ViewGUI
      */
         public ViewGUI()
-        {
+         {
             initComponents();
-            jtData.getSelectionModel().addListSelectionListener(new ListSelectionListener(){
-        @Override
-        public void valueChanged(ListSelectionEvent event) {
-            if(! jtData.getSelectionModel().isSelectionEmpty())
-                    {
-                        int selectedRow = jtData.getSelectionModel().getMinSelectionIndex();
-                        final JPanel panel = new JPanel();
-                        final JRadioButton button1 = new JRadioButton("pre-Calculus A");
-                        final JRadioButton button2 = new JRadioButton("pre-Calculus B");
-
-                        panel.add(button1);
-                        panel.add(button2);
-
-                        JOptionPane.showMessageDialog(null, panel);
-                        //JOptionPane.showMessageDialog(null, "Selected Row" + selectedRow);
-                    }
-                //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
-            }
-
-                });
+//             jtData.getSelectionModel().addListSelectionListener(new ListSelectionListener()
+//             {
+//                 @Override
+//                 public void valueChanged(ListSelectionEvent event)
+//                 {
+//                     if (!jtData.getSelectionModel().isSelectionEmpty())
+//                     {
+//                         int selectedRow = jtData.getSelectionModel().getMinSelectionIndex();
+//                         final JPanel panel = new JPanel();
+//                         final JRadioButton button1 = new JRadioButton("pre-Calculus A");
+//                         final JRadioButton button2 = new JRadioButton("pre-Calculus B");
+//
+//                         panel.add(button1);
+//                         panel.add(button2);
+//
+//                         JOptionPane.showMessageDialog(null, panel);
+//                         //JOptionPane.showMessageDialog(null, "Selected Row" + selectedRow);
+//                     }
+//                     //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
+//                 }
+//
+//             });
                         }
 
 
@@ -70,6 +76,8 @@ public class ViewGUI extends javax.swing.JFrame
     private void initComponents()
     {
 
+        jDialoge = new javax.swing.JDialog();
+        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
         panChooser = new javax.swing.JPanel();
@@ -81,12 +89,39 @@ public class ViewGUI extends javax.swing.JFrame
         mnuImport = new javax.swing.JMenuItem();
         mnuCreateDataSheet = new javax.swing.JMenuItem();
 
+        jDialoge.setMinimumSize(new java.awt.Dimension(400, 200));
+
+        jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jDialogeLayout = new javax.swing.GroupLayout(jDialoge.getContentPane());
+        jDialoge.getContentPane().setLayout(jDialogeLayout);
+        jDialogeLayout.setHorizontalGroup(
+            jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
+                .addContainerGap(752, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
+        );
+        jDialogeLayout.setVerticalGroup(
+            jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
+                .addContainerGap(439, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("IB Sophomores dbs");
         setBackground(new java.awt.Color(219, 237, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(255, 255, 255));
-        setName("frame1"); // NOI18N
         setResizable(false);
 
         jtData.setBackground(new java.awt.Color(204, 233, 247));
@@ -121,6 +156,13 @@ public class ViewGUI extends javax.swing.JFrame
             }
         });
         jtData.getTableHeader().setReorderingAllowed(false);
+        jtData.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
+                jtDataMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtData);
         if (jtData.getColumnModel().getColumnCount() > 0)
         {
@@ -460,6 +502,16 @@ public class ViewGUI extends javax.swing.JFrame
         filter(query); 
     }//GEN-LAST:event_txtSearchBarKeyReleased
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        jDialoge.dispose();// TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jtDataMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jtDataMouseClicked
+    {//GEN-HEADEREND:event_jtDataMouseClicked
+        jDialoge.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_jtDataMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -506,6 +558,8 @@ public class ViewGUI extends javax.swing.JFrame
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JDialog jDialoge;
     public javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
