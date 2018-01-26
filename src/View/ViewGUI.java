@@ -89,6 +89,77 @@ public class ViewGUI extends javax.swing.JFrame
         lblLang = new javax.swing.JLabel();
         lblSpeech = new javax.swing.JLabel();
         lblTOK = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox8 = new javax.swing.JCheckBox();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox16 = new javax.swing.JCheckBox();
+        jCheckBox17 = new javax.swing.JCheckBox();
+        jCheckBox18 = new javax.swing.JCheckBox();
+        jCheckBox19 = new javax.swing.JCheckBox();
+        jCheckBox20 = new javax.swing.JCheckBox();
+        jCheckBox21 = new javax.swing.JCheckBox();
+        jCheckBox22 = new javax.swing.JCheckBox();
+        jCheckBox23 = new javax.swing.JCheckBox();
+        jCheckBox24 = new javax.swing.JCheckBox();
+        jCheckBox25 = new javax.swing.JCheckBox();
+        jCheckBox26 = new javax.swing.JCheckBox();
+        jCheckBox27 = new javax.swing.JCheckBox();
+        jCheckBox28 = new javax.swing.JCheckBox();
+        jCheckBox29 = new javax.swing.JCheckBox();
+        jCheckBox30 = new javax.swing.JCheckBox();
+        jCheckBox31 = new javax.swing.JCheckBox();
+        jCheckBox32 = new javax.swing.JCheckBox();
+        jCheckBox33 = new javax.swing.JCheckBox();
+        jCheckBox34 = new javax.swing.JCheckBox();
+        jCheckBox35 = new javax.swing.JCheckBox();
+        jCheckBox36 = new javax.swing.JCheckBox();
+        jCheckBox37 = new javax.swing.JCheckBox();
+        jCheckBox38 = new javax.swing.JCheckBox();
+        jCheckBox39 = new javax.swing.JCheckBox();
+        jCheckBox40 = new javax.swing.JCheckBox();
+        jCheckBox41 = new javax.swing.JCheckBox();
+        jCheckBox42 = new javax.swing.JCheckBox();
+        jCheckBox43 = new javax.swing.JCheckBox();
+        jCheckBox44 = new javax.swing.JCheckBox();
+        jCheckBox45 = new javax.swing.JCheckBox();
+        jCheckBox46 = new javax.swing.JCheckBox();
+        jCheckBox47 = new javax.swing.JCheckBox();
+        jCheckBox48 = new javax.swing.JCheckBox();
+        jCheckBox49 = new javax.swing.JCheckBox();
+        jCheckBox50 = new javax.swing.JCheckBox();
+        jCheckBox51 = new javax.swing.JCheckBox();
+        jCheckBox52 = new javax.swing.JCheckBox();
+        jCheckBox53 = new javax.swing.JCheckBox();
+        jCheckBox54 = new javax.swing.JCheckBox();
+        jCheckBox55 = new javax.swing.JCheckBox();
+        jCheckBox56 = new javax.swing.JCheckBox();
+        jCheckBox57 = new javax.swing.JCheckBox();
+        jCheckBox58 = new javax.swing.JCheckBox();
+        jCheckBox59 = new javax.swing.JCheckBox();
+        jCheckBox60 = new javax.swing.JCheckBox();
+        jCheckBox61 = new javax.swing.JCheckBox();
+        jCheckBox62 = new javax.swing.JCheckBox();
+        jCheckBox63 = new javax.swing.JCheckBox();
+        jCheckBox64 = new javax.swing.JCheckBox();
+        jCheckBox65 = new javax.swing.JCheckBox();
+        jCheckBox66 = new javax.swing.JCheckBox();
+        jCheckBox67 = new javax.swing.JCheckBox();
+        jCheckBox68 = new javax.swing.JCheckBox();
+        jCheckBox69 = new javax.swing.JCheckBox();
+        jCheckBox70 = new javax.swing.JCheckBox();
+        jCheckBox71 = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
         panChooser = new javax.swing.JPanel();
@@ -111,38 +182,180 @@ public class ViewGUI extends javax.swing.JFrame
             }
         });
 
-        lblEng.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblEng.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblEng.setText("English");
 
-        lblMath.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblMath.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblMath.setText("Math");
 
-        lblSci.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSci.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblSci.setText("Science");
 
-        lblSS.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSS.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblSS.setText("Social Studies");
 
-        lblHealth.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblHealth.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblHealth.setText("Health");
 
-        lblAth.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblAth.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblAth.setText("PE/Athletics");
 
-        lblTech.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblTech.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblTech.setText("Technology");
 
-        lblArts.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblArts.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblArts.setText("Fine Arts");
 
-        lblLang.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblLang.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblLang.setText("World Lang.");
 
-        lblSpeech.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblSpeech.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblSpeech.setText("Speech");
 
-        lblTOK.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
+        lblTOK.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         lblTOK.setText("TOK");
+
+        jCheckBox1.setText("1A");
+
+        jCheckBox2.setText("2A");
+
+        jCheckBox3.setText("2A");
+
+        jCheckBox4.setText("2B");
+
+        jCheckBox5.setText("3A");
+
+        jCheckBox6.setText("3B");
+
+        jCheckBox7.setText("4A");
+
+        jCheckBox8.setText("4B");
+
+        jCheckBox9.setText("Algebra A");
+
+        jCheckBox10.setText("B");
+
+        jCheckBox11.setText("Geometry A");
+
+        jCheckBox12.setText("B");
+
+        jCheckBox13.setText("Algebra 2A");
+
+        jCheckBox14.setText("2B");
+
+        jCheckBox15.setText("SL A");
+
+        jCheckBox16.setText("SL B");
+
+        jCheckBox17.setText("HL A");
+
+        jCheckBox18.setText("HL B");
+
+        jCheckBox19.setText("HL C");
+
+        jCheckBox20.setText("Bio A");
+
+        jCheckBox21.setText("B");
+
+        jCheckBox22.setText("Chem A");
+
+        jCheckBox23.setText("B");
+
+        jCheckBox24.setText("Sci3 A");
+
+        jCheckBox25.setText("Sci3 B");
+
+        jCheckBox26.setText("Sci3 C");
+
+        jCheckBox27.setText("Sci4 A");
+
+        jCheckBox28.setText("Sci4 B");
+
+        jCheckBox29.setText("Sci4 C");
+
+        jCheckBox30.setText("World Geog. A");
+
+        jCheckBox31.setText("B");
+
+        jCheckBox32.setText("World Hist. A");
+
+        jCheckBox33.setText("B");
+
+        jCheckBox34.setText("HOA A");
+
+        jCheckBox35.setText("B");
+
+        jCheckBox36.setText("20th Cent. A");
+
+        jCheckBox37.setText("B");
+
+        jCheckBox38.setText("Econ AP/IB/Dual");
+
+        jCheckBox39.setText("Health");
+
+        jCheckBox40.setText("Hum. Service A");
+
+        jCheckBox41.setText("B");
+
+        jCheckBox42.setText("Health Sci. A");
+
+        jCheckBox43.setText("B");
+
+        jCheckBox44.setText("Cosmo1 A");
+
+        jCheckBox45.setText("B");
+
+        jCheckBox46.setText("C");
+
+        jCheckBox47.setText("Coun/Men's Hlth. A");
+
+        jCheckBox48.setText("B");
+
+        jCheckBox49.setText("PE/Athletics A");
+
+        jCheckBox50.setText("PE/Athletics B");
+
+        jCheckBox51.setText("Tech A");
+
+        jCheckBox52.setText("Tech B");
+
+        jCheckBox53.setText("Art A");
+
+        jCheckBox54.setText("B");
+
+        jCheckBox55.setText("Band A");
+
+        jCheckBox56.setText("B");
+
+        jCheckBox57.setText("Choir A");
+
+        jCheckBox58.setText("B");
+
+        jCheckBox59.setText("Dance A");
+
+        jCheckBox60.setText("B");
+
+        jCheckBox61.setText("Orch. A");
+
+        jCheckBox62.setText("B");
+
+        jCheckBox63.setText("Theater A");
+
+        jCheckBox64.setText("B");
+
+        jCheckBox65.setText("Lang1 A");
+
+        jCheckBox66.setText("B");
+
+        jCheckBox67.setText("Lang2 A");
+
+        jCheckBox68.setText("B");
+
+        jCheckBox69.setText("Prof. Comm.");
+
+        jCheckBox70.setText("A");
+
+        jCheckBox71.setText("B");
 
         javax.swing.GroupLayout jDialogeLayout = new javax.swing.GroupLayout(jDialoge.getContentPane());
         jDialoge.getContentPane().setLayout(jDialogeLayout);
@@ -151,51 +364,289 @@ public class ViewGUI extends javax.swing.JFrame
             .addGroup(jDialogeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1))
                     .addGroup(jDialogeLayout.createSequentialGroup()
                         .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMath)
-                            .addComponent(lblSci)
-                            .addComponent(lblSS)
-                            .addComponent(lblHealth)
-                            .addComponent(lblAth)
-                            .addComponent(lblTech)
-                            .addComponent(lblArts)
-                            .addComponent(lblLang)
-                            .addComponent(lblSpeech)
-                            .addComponent(lblTOK)
-                            .addComponent(lblEng))
-                        .addGap(0, 715, Short.MAX_VALUE)))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblSci)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox21)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox22)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox23)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox26)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox28)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox29))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblArts)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox54)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox55)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox56)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox57)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox58)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox59)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox60)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox61)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox62)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox63)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox64))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblSpeech)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox69))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblTOK)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox70)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox71))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblEng)
+                                .addGap(33, 33, 33)
+                                .addComponent(jCheckBox1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox2)
+                                .addGap(24, 24, 24)
+                                .addComponent(jCheckBox3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox4)
+                                .addGap(24, 24, 24)
+                                .addComponent(jCheckBox5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox6)
+                                .addGap(27, 27, 27)
+                                .addComponent(jCheckBox7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox8))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblHealth)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox48))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblMath)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox10)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox12)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox14)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox19))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblSS)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox30)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox31)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jCheckBox38))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblAth)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox49)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox50)))
+                        .addGap(0, 28, Short.MAX_VALUE))
+                    .addGroup(jDialogeLayout.createSequentialGroup()
+                        .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblLang)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox65)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox66)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox67)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jCheckBox68))
+                            .addGroup(jDialogeLayout.createSequentialGroup()
+                                .addComponent(lblTech)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox51)
+                                .addGap(18, 18, 18)
+                                .addComponent(jCheckBox52)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
                 .addContainerGap())
         );
         jDialogeLayout.setVerticalGroup(
             jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(lblEng)
+                .addGap(41, 41, 41)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblEng)
+                    .addComponent(jCheckBox1)
+                    .addComponent(jCheckBox2)
+                    .addComponent(jCheckBox3)
+                    .addComponent(jCheckBox4)
+                    .addComponent(jCheckBox5)
+                    .addComponent(jCheckBox6)
+                    .addComponent(jCheckBox7)
+                    .addComponent(jCheckBox8))
                 .addGap(18, 18, 18)
-                .addComponent(lblMath)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMath)
+                    .addComponent(jCheckBox9)
+                    .addComponent(jCheckBox10)
+                    .addComponent(jCheckBox11)
+                    .addComponent(jCheckBox12)
+                    .addComponent(jCheckBox13)
+                    .addComponent(jCheckBox14)
+                    .addComponent(jCheckBox15)
+                    .addComponent(jCheckBox16)
+                    .addComponent(jCheckBox17)
+                    .addComponent(jCheckBox18)
+                    .addComponent(jCheckBox19))
                 .addGap(18, 18, 18)
-                .addComponent(lblSci)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSci)
+                    .addComponent(jCheckBox20)
+                    .addComponent(jCheckBox21)
+                    .addComponent(jCheckBox22)
+                    .addComponent(jCheckBox23)
+                    .addComponent(jCheckBox24)
+                    .addComponent(jCheckBox25)
+                    .addComponent(jCheckBox26)
+                    .addComponent(jCheckBox27)
+                    .addComponent(jCheckBox28)
+                    .addComponent(jCheckBox29))
                 .addGap(18, 18, 18)
-                .addComponent(lblSS)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSS)
+                    .addComponent(jCheckBox30)
+                    .addComponent(jCheckBox31)
+                    .addComponent(jCheckBox32)
+                    .addComponent(jCheckBox33)
+                    .addComponent(jCheckBox34)
+                    .addComponent(jCheckBox35)
+                    .addComponent(jCheckBox36)
+                    .addComponent(jCheckBox37)
+                    .addComponent(jCheckBox38))
                 .addGap(18, 18, 18)
-                .addComponent(lblHealth)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblHealth)
+                    .addComponent(jCheckBox39)
+                    .addComponent(jCheckBox40)
+                    .addComponent(jCheckBox41)
+                    .addComponent(jCheckBox42)
+                    .addComponent(jCheckBox43)
+                    .addComponent(jCheckBox44)
+                    .addComponent(jCheckBox45)
+                    .addComponent(jCheckBox46)
+                    .addComponent(jCheckBox47)
+                    .addComponent(jCheckBox48))
                 .addGap(18, 18, 18)
-                .addComponent(lblAth)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblAth)
+                    .addComponent(jCheckBox49)
+                    .addComponent(jCheckBox50))
                 .addGap(18, 18, 18)
-                .addComponent(lblTech)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTech)
+                    .addComponent(jCheckBox51)
+                    .addComponent(jCheckBox52))
                 .addGap(18, 18, 18)
-                .addComponent(lblArts)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblArts)
+                    .addComponent(jCheckBox53)
+                    .addComponent(jCheckBox54)
+                    .addComponent(jCheckBox55)
+                    .addComponent(jCheckBox56)
+                    .addComponent(jCheckBox57)
+                    .addComponent(jCheckBox58)
+                    .addComponent(jCheckBox59)
+                    .addComponent(jCheckBox60)
+                    .addComponent(jCheckBox61)
+                    .addComponent(jCheckBox62)
+                    .addComponent(jCheckBox63)
+                    .addComponent(jCheckBox64))
                 .addGap(18, 18, 18)
-                .addComponent(lblLang)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblLang)
+                    .addComponent(jCheckBox65)
+                    .addComponent(jCheckBox66)
+                    .addComponent(jCheckBox67)
+                    .addComponent(jCheckBox68))
                 .addGap(18, 18, 18)
-                .addComponent(lblSpeech)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSpeech)
+                    .addComponent(jCheckBox69))
                 .addGap(18, 18, 18)
-                .addComponent(lblTOK)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTOK)
+                    .addComponent(jCheckBox70)
+                    .addComponent(jCheckBox71))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -642,6 +1093,77 @@ public class ViewGUI extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox jCheckBox15;
+    private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JCheckBox jCheckBox17;
+    private javax.swing.JCheckBox jCheckBox18;
+    private javax.swing.JCheckBox jCheckBox19;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox20;
+    private javax.swing.JCheckBox jCheckBox21;
+    private javax.swing.JCheckBox jCheckBox22;
+    private javax.swing.JCheckBox jCheckBox23;
+    private javax.swing.JCheckBox jCheckBox24;
+    private javax.swing.JCheckBox jCheckBox25;
+    private javax.swing.JCheckBox jCheckBox26;
+    private javax.swing.JCheckBox jCheckBox27;
+    private javax.swing.JCheckBox jCheckBox28;
+    private javax.swing.JCheckBox jCheckBox29;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox30;
+    private javax.swing.JCheckBox jCheckBox31;
+    private javax.swing.JCheckBox jCheckBox32;
+    private javax.swing.JCheckBox jCheckBox33;
+    private javax.swing.JCheckBox jCheckBox34;
+    private javax.swing.JCheckBox jCheckBox35;
+    private javax.swing.JCheckBox jCheckBox36;
+    private javax.swing.JCheckBox jCheckBox37;
+    private javax.swing.JCheckBox jCheckBox38;
+    private javax.swing.JCheckBox jCheckBox39;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox40;
+    private javax.swing.JCheckBox jCheckBox41;
+    private javax.swing.JCheckBox jCheckBox42;
+    private javax.swing.JCheckBox jCheckBox43;
+    private javax.swing.JCheckBox jCheckBox44;
+    private javax.swing.JCheckBox jCheckBox45;
+    private javax.swing.JCheckBox jCheckBox46;
+    private javax.swing.JCheckBox jCheckBox47;
+    private javax.swing.JCheckBox jCheckBox48;
+    private javax.swing.JCheckBox jCheckBox49;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox50;
+    private javax.swing.JCheckBox jCheckBox51;
+    private javax.swing.JCheckBox jCheckBox52;
+    private javax.swing.JCheckBox jCheckBox53;
+    private javax.swing.JCheckBox jCheckBox54;
+    private javax.swing.JCheckBox jCheckBox55;
+    private javax.swing.JCheckBox jCheckBox56;
+    private javax.swing.JCheckBox jCheckBox57;
+    private javax.swing.JCheckBox jCheckBox58;
+    private javax.swing.JCheckBox jCheckBox59;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox60;
+    private javax.swing.JCheckBox jCheckBox61;
+    private javax.swing.JCheckBox jCheckBox62;
+    private javax.swing.JCheckBox jCheckBox63;
+    private javax.swing.JCheckBox jCheckBox64;
+    private javax.swing.JCheckBox jCheckBox65;
+    private javax.swing.JCheckBox jCheckBox66;
+    private javax.swing.JCheckBox jCheckBox67;
+    private javax.swing.JCheckBox jCheckBox68;
+    private javax.swing.JCheckBox jCheckBox69;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox70;
+    private javax.swing.JCheckBox jCheckBox71;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JDialog jDialoge;
     public javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
