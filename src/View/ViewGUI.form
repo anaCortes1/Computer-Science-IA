@@ -4,6 +4,7 @@
   <NonVisualComponents>
     <Container class="javax.swing.JDialog" name="jDialoge">
       <Properties>
+        <Property name="title" type="java.lang.String" value="Student Info"/>
         <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[860, 530]"/>
         </Property>
@@ -78,25 +79,6 @@
                                   <Component id="jCheckBox70" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jCheckBox71" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblEng" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox3" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox8" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblHealth" min="-2" max="-2" attributes="0"/>
@@ -174,55 +156,85 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jCheckBox50" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="lblEng" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <Component id="eng1A" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="eng1B" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="eng2A" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="eng2B" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                  <Component id="eng3A" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="eng3B" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <Component id="eng4A" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="eng4B" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace min="0" pref="28" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblLang" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox65" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox66" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox67" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox68" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblLang" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox65" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jCheckBox66" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox67" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="jCheckBox68" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblTech" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox51" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jCheckBox52" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblTech" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox51" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox52" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblEng" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox5" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng1A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng1B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng2A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng2B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng3A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng3B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng4A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="eng4B" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -327,7 +339,7 @@
                       <Component id="jCheckBox70" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jCheckBox71" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="7" max="32767" attributes="0"/>
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -431,42 +443,45 @@
             <Property name="text" type="java.lang.String" value="TOK"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+        <Component class="javax.swing.JCheckBox" name="eng1A">
           <Properties>
             <Property name="text" type="java.lang.String" value="1A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eng1AActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+        <Component class="javax.swing.JCheckBox" name="eng1B">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="1B"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="eng2A">
           <Properties>
             <Property name="text" type="java.lang.String" value="2A"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="2A"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox4">
+        <Component class="javax.swing.JCheckBox" name="eng2B">
           <Properties>
             <Property name="text" type="java.lang.String" value="2B"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox5">
+        <Component class="javax.swing.JCheckBox" name="eng3A">
           <Properties>
             <Property name="text" type="java.lang.String" value="3A"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox6">
+        <Component class="javax.swing.JCheckBox" name="eng3B">
           <Properties>
             <Property name="text" type="java.lang.String" value="3B"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox7">
+        <Component class="javax.swing.JCheckBox" name="eng4A">
           <Properties>
             <Property name="text" type="java.lang.String" value="4A"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox8">
+        <Component class="javax.swing.JCheckBox" name="eng4B">
           <Properties>
             <Property name="text" type="java.lang.String" value="4B"/>
           </Properties>
@@ -784,6 +799,14 @@
         <Component class="javax.swing.JCheckBox" name="jCheckBox71">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Copperplate Gothic Light" size="13" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Student Classes"/>
           </Properties>
         </Component>
       </SubComponents>
