@@ -4,10 +4,12 @@
  * and open the template in the editor.
  */
 package View;
+import java.awt.Component;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import javax.swing.JCheckBox;
 import javax.swing.JFileChooser;
 import javax.swing.RowFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
@@ -131,29 +133,29 @@ public class ViewGUI extends javax.swing.JFrame
         COS1C = new javax.swing.JCheckBox();
         CMhlthA = new javax.swing.JCheckBox();
         CMhlthB = new javax.swing.JCheckBox();
-        jCheckBox49 = new javax.swing.JCheckBox();
-        jCheckBox50 = new javax.swing.JCheckBox();
-        jCheckBox51 = new javax.swing.JCheckBox();
-        jCheckBox52 = new javax.swing.JCheckBox();
-        jCheckBox53 = new javax.swing.JCheckBox();
-        jCheckBox54 = new javax.swing.JCheckBox();
-        jCheckBox55 = new javax.swing.JCheckBox();
-        jCheckBox56 = new javax.swing.JCheckBox();
-        jCheckBox57 = new javax.swing.JCheckBox();
-        jCheckBox58 = new javax.swing.JCheckBox();
-        jCheckBox59 = new javax.swing.JCheckBox();
-        jCheckBox60 = new javax.swing.JCheckBox();
-        jCheckBox61 = new javax.swing.JCheckBox();
-        jCheckBox62 = new javax.swing.JCheckBox();
-        jCheckBox63 = new javax.swing.JCheckBox();
-        jCheckBox64 = new javax.swing.JCheckBox();
-        jCheckBox65 = new javax.swing.JCheckBox();
-        jCheckBox66 = new javax.swing.JCheckBox();
-        jCheckBox67 = new javax.swing.JCheckBox();
-        jCheckBox68 = new javax.swing.JCheckBox();
-        jCheckBox69 = new javax.swing.JCheckBox();
-        jCheckBox70 = new javax.swing.JCheckBox();
-        jCheckBox71 = new javax.swing.JCheckBox();
+        athA = new javax.swing.JCheckBox();
+        athB = new javax.swing.JCheckBox();
+        techA = new javax.swing.JCheckBox();
+        techB = new javax.swing.JCheckBox();
+        artA = new javax.swing.JCheckBox();
+        artB = new javax.swing.JCheckBox();
+        bandA = new javax.swing.JCheckBox();
+        bandB = new javax.swing.JCheckBox();
+        choirA = new javax.swing.JCheckBox();
+        choirB = new javax.swing.JCheckBox();
+        danceA = new javax.swing.JCheckBox();
+        danceB = new javax.swing.JCheckBox();
+        orchA = new javax.swing.JCheckBox();
+        orchB = new javax.swing.JCheckBox();
+        theaterA = new javax.swing.JCheckBox();
+        theaterB = new javax.swing.JCheckBox();
+        lang1A = new javax.swing.JCheckBox();
+        lang1B = new javax.swing.JCheckBox();
+        lang2A = new javax.swing.JCheckBox();
+        lang2B = new javax.swing.JCheckBox();
+        comm = new javax.swing.JCheckBox();
+        TOKA = new javax.swing.JCheckBox();
+        TOKB = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
@@ -643,51 +645,212 @@ public class ViewGUI extends javax.swing.JFrame
             }
         });
 
-        jCheckBox49.setText("PE/Athletics A");
+        athA.setText("PE/Athletics A");
+        athA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                athAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox50.setText("PE/Athletics B");
+        athB.setText("PE/Athletics B");
+        athB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                athBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox51.setText("Tech A");
+        techA.setText("Tech A");
+        techA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                techAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox52.setText("Tech B");
+        techB.setText("Tech B");
+        techB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                techBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox53.setText("Art A");
+        artA.setText("Art A");
+        artA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                artAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox54.setText("B");
+        artB.setText("B");
+        artB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                artBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox55.setText("Band A");
+        bandA.setText("Band A");
+        bandA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                bandAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox56.setText("B");
+        bandB.setText("B");
+        bandB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                bandBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox57.setText("Choir A");
+        choirA.setText("Choir A");
+        choirA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                choirAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox58.setText("B");
+        choirB.setText("B");
+        choirB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                choirBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox59.setText("Dance A");
+        danceA.setText("Dance A");
+        danceA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                danceAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox60.setText("B");
+        danceB.setText("B");
+        danceB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                danceBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox61.setText("Orch. A");
+        orchA.setText("Orch. A");
+        orchA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                orchAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox62.setText("B");
+        orchB.setText("B");
+        orchB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                orchBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox63.setText("Theater A");
+        theaterA.setText("Theater A");
+        theaterA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                theaterAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox64.setText("B");
+        theaterB.setText("B");
+        theaterB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                theaterBActionPerformed(evt);
+            }
+        });
 
-        jCheckBox65.setText("Lang1 A");
+        lang1A.setText("Lang1 A");
+        lang1A.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                lang1AActionPerformed(evt);
+            }
+        });
 
-        jCheckBox66.setText("B");
+        lang1B.setText("B");
+        lang1B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                lang1BActionPerformed(evt);
+            }
+        });
 
-        jCheckBox67.setText("Lang2 A");
+        lang2A.setText("Lang2 A");
+        lang2A.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                lang2AActionPerformed(evt);
+            }
+        });
 
-        jCheckBox68.setText("B");
+        lang2B.setText("B");
+        lang2B.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                lang2BActionPerformed(evt);
+            }
+        });
 
-        jCheckBox69.setText("Prof. Comm.");
+        comm.setText("Prof. Comm.");
+        comm.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                commActionPerformed(evt);
+            }
+        });
 
-        jCheckBox70.setText("A");
+        TOKA.setText("A");
+        TOKA.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                TOKAActionPerformed(evt);
+            }
+        });
 
-        jCheckBox71.setText("B");
+        TOKB.setText("B");
+        TOKB.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
+                TOKBActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         jLabel1.setText("Student Classes");
@@ -726,39 +889,35 @@ public class ViewGUI extends javax.swing.JFrame
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblArts)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox53)
+                                .addComponent(artA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox54)
+                                .addComponent(artB)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox55)
+                                .addComponent(bandA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox56)
+                                .addComponent(bandB)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox57)
+                                .addComponent(choirA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox58)
+                                .addComponent(choirB)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox59)
+                                .addComponent(danceA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox60)
+                                .addComponent(danceB)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox61)
+                                .addComponent(orchA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox62)
+                                .addComponent(orchB)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jCheckBox63)
+                                .addComponent(theaterA)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jCheckBox64))
-                            .addGroup(jDialogeLayout.createSequentialGroup()
-                                .addComponent(lblSpeech)
-                                .addGap(18, 18, 18)
-                                .addComponent(jCheckBox69))
+                                .addComponent(theaterB))
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblTOK)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox70)
+                                .addComponent(TOKA)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox71))
+                                .addComponent(TOKB))
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblHealth)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -828,9 +987,9 @@ public class ViewGUI extends javax.swing.JFrame
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblAth)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox49)
+                                .addComponent(athA)
                                 .addGap(18, 18, 18)
-                                .addComponent(jCheckBox50))
+                                .addComponent(athB))
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblEng)
                                 .addGap(33, 33, 33)
@@ -857,24 +1016,29 @@ public class ViewGUI extends javax.swing.JFrame
                                     .addGroup(jDialogeLayout.createSequentialGroup()
                                         .addComponent(lblLang)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jCheckBox65)
+                                        .addComponent(lang1A)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jCheckBox66)
+                                        .addComponent(lang1B)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jCheckBox67)
+                                        .addComponent(lang2A)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jCheckBox68))
+                                        .addComponent(lang2B))
                                     .addGroup(jDialogeLayout.createSequentialGroup()
                                         .addComponent(lblTech)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jCheckBox51)
+                                        .addComponent(techA)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jCheckBox52)))
+                                        .addComponent(techB)))
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(jButton1)))
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(jDialogeLayout.createSequentialGroup()
+                        .addComponent(lblSpeech)
+                        .addGap(18, 18, 18)
+                        .addComponent(comm)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -951,44 +1115,44 @@ public class ViewGUI extends javax.swing.JFrame
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblAth)
-                    .addComponent(jCheckBox49)
-                    .addComponent(jCheckBox50))
+                    .addComponent(athA)
+                    .addComponent(athB))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTech)
-                    .addComponent(jCheckBox51)
-                    .addComponent(jCheckBox52))
+                    .addComponent(techA)
+                    .addComponent(techB))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblArts)
-                    .addComponent(jCheckBox53)
-                    .addComponent(jCheckBox54)
-                    .addComponent(jCheckBox55)
-                    .addComponent(jCheckBox56)
-                    .addComponent(jCheckBox57)
-                    .addComponent(jCheckBox58)
-                    .addComponent(jCheckBox59)
-                    .addComponent(jCheckBox60)
-                    .addComponent(jCheckBox61)
-                    .addComponent(jCheckBox62)
-                    .addComponent(jCheckBox63)
-                    .addComponent(jCheckBox64))
+                    .addComponent(artA)
+                    .addComponent(artB)
+                    .addComponent(bandA)
+                    .addComponent(bandB)
+                    .addComponent(choirA)
+                    .addComponent(choirB)
+                    .addComponent(danceA)
+                    .addComponent(danceB)
+                    .addComponent(orchA)
+                    .addComponent(orchB)
+                    .addComponent(theaterA)
+                    .addComponent(theaterB))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblLang)
-                    .addComponent(jCheckBox65)
-                    .addComponent(jCheckBox66)
-                    .addComponent(jCheckBox67)
-                    .addComponent(jCheckBox68))
+                    .addComponent(lang1A)
+                    .addComponent(lang1B)
+                    .addComponent(lang2A)
+                    .addComponent(lang2B))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSpeech)
-                    .addComponent(jCheckBox69))
+                    .addComponent(comm))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTOK)
-                    .addComponent(jCheckBox70)
-                    .addComponent(jCheckBox71))
+                    .addComponent(TOKA)
+                    .addComponent(TOKB))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
@@ -1378,7 +1542,16 @@ public class ViewGUI extends javax.swing.JFrame
         String query = txtSearchBar.getText();
         filter(query); 
     }//GEN-LAST:event_txtSearchBarKeyReleased
-
+    public void clearDialoge()
+    {
+       JCheckBox [] boxes = new JCheckBox[71];
+//       Component [] components = jDialoge.getComponents();
+//       
+//       for(Component a : components)
+//         if(a instanceOf JCheckBox)
+//            a.check = false;
+            
+    }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
         jDialoge.dispose();// TODO add your handling code here:
@@ -2304,6 +2477,443 @@ public class ViewGUI extends javax.swing.JFrame
         } catch(Exception e){System.out.println(e);}
     }//GEN-LAST:event_CMhlthBActionPerformed
 
+    private void athAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_athAActionPerformed
+    {//GEN-HEADEREND:event_athAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(50);
+            if(athA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_athAActionPerformed
+
+    private void athBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_athBActionPerformed
+    {//GEN-HEADEREND:event_athBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(51);
+            if(athB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_athBActionPerformed
+
+    private void techAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_techAActionPerformed
+    {//GEN-HEADEREND:event_techAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(52);
+            if(techA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_techAActionPerformed
+
+    private void techBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_techBActionPerformed
+    {//GEN-HEADEREND:event_techBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(53);
+            if(techB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_techBActionPerformed
+
+    private void artAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_artAActionPerformed
+    {//GEN-HEADEREND:event_artAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(54);
+            if(artA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_artAActionPerformed
+
+    private void artBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_artBActionPerformed
+    {//GEN-HEADEREND:event_artBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(55);
+            if(artB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_artBActionPerformed
+
+    private void bandAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_bandAActionPerformed
+    {//GEN-HEADEREND:event_bandAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(56);
+            if(bandA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_bandAActionPerformed
+
+    private void bandBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_bandBActionPerformed
+    {//GEN-HEADEREND:event_bandBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(57);
+            if(bandB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_bandBActionPerformed
+
+    private void choirAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_choirAActionPerformed
+    {//GEN-HEADEREND:event_choirAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(58);
+            if(choirA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_choirAActionPerformed
+
+    private void choirBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_choirBActionPerformed
+    {//GEN-HEADEREND:event_choirBActionPerformed
+       try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(59);
+            if(choirB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_choirBActionPerformed
+
+    private void danceAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_danceAActionPerformed
+    {//GEN-HEADEREND:event_danceAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(60);
+            if(danceA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_danceAActionPerformed
+
+    private void danceBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_danceBActionPerformed
+    {//GEN-HEADEREND:event_danceBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(61);
+            if(danceB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_danceBActionPerformed
+
+    private void orchAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_orchAActionPerformed
+    {//GEN-HEADEREND:event_orchAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(62);
+            if(orchA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_orchAActionPerformed
+
+    private void orchBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_orchBActionPerformed
+    {//GEN-HEADEREND:event_orchBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(63);
+            if(orchB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_orchBActionPerformed
+
+    private void theaterAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_theaterAActionPerformed
+    {//GEN-HEADEREND:event_theaterAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(64);
+            if(theaterA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_theaterAActionPerformed
+
+    private void theaterBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_theaterBActionPerformed
+    {//GEN-HEADEREND:event_theaterBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(65);
+            if(theaterB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_theaterBActionPerformed
+
+    private void lang1AActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_lang1AActionPerformed
+    {//GEN-HEADEREND:event_lang1AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(66);
+            if(lang1A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang1AActionPerformed
+
+    private void lang1BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_lang1BActionPerformed
+    {//GEN-HEADEREND:event_lang1BActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(67);
+            if(lang1B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang1BActionPerformed
+
+    private void lang2AActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_lang2AActionPerformed
+    {//GEN-HEADEREND:event_lang2AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(68);
+            if(lang2A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang2AActionPerformed
+
+    private void lang2BActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_lang2BActionPerformed
+    {//GEN-HEADEREND:event_lang2BActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(69);
+            if(lang2B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang2BActionPerformed
+
+    private void commActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_commActionPerformed
+    {//GEN-HEADEREND:event_commActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(70);
+            if(comm.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_commActionPerformed
+
+    private void TOKAActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_TOKAActionPerformed
+    {//GEN-HEADEREND:event_TOKAActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(71);
+            if(TOKA.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_TOKAActionPerformed
+
+    private void TOKBActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_TOKBActionPerformed
+    {//GEN-HEADEREND:event_TOKBActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(72);
+            if(TOKB.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_TOKBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2365,6 +2975,8 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox HSB;
     private javax.swing.JCheckBox HSCIA;
     private javax.swing.JCheckBox HSCIB;
+    private javax.swing.JCheckBox TOKA;
+    private javax.swing.JCheckBox TOKB;
     private javax.swing.JCheckBox WGA;
     private javax.swing.JCheckBox WGB;
     private javax.swing.JCheckBox WHA;
@@ -2373,10 +2985,21 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox alg2B;
     private javax.swing.JCheckBox algA;
     private javax.swing.JCheckBox algB;
+    private javax.swing.JCheckBox artA;
+    private javax.swing.JCheckBox artB;
+    private javax.swing.JCheckBox athA;
+    private javax.swing.JCheckBox athB;
+    private javax.swing.JCheckBox bandA;
+    private javax.swing.JCheckBox bandB;
     private javax.swing.JCheckBox bioA;
     private javax.swing.JCheckBox bioB;
     private javax.swing.JCheckBox chemA;
     private javax.swing.JCheckBox chemB;
+    private javax.swing.JCheckBox choirA;
+    private javax.swing.JCheckBox choirB;
+    private javax.swing.JCheckBox comm;
+    private javax.swing.JCheckBox danceA;
+    private javax.swing.JCheckBox danceB;
     private javax.swing.JCheckBox eng1A;
     private javax.swing.JCheckBox eng1B;
     private javax.swing.JCheckBox eng2A;
@@ -2391,35 +3014,16 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox hlB;
     private javax.swing.JCheckBox hlC;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox49;
-    private javax.swing.JCheckBox jCheckBox50;
-    private javax.swing.JCheckBox jCheckBox51;
-    private javax.swing.JCheckBox jCheckBox52;
-    private javax.swing.JCheckBox jCheckBox53;
-    private javax.swing.JCheckBox jCheckBox54;
-    private javax.swing.JCheckBox jCheckBox55;
-    private javax.swing.JCheckBox jCheckBox56;
-    private javax.swing.JCheckBox jCheckBox57;
-    private javax.swing.JCheckBox jCheckBox58;
-    private javax.swing.JCheckBox jCheckBox59;
-    private javax.swing.JCheckBox jCheckBox60;
-    private javax.swing.JCheckBox jCheckBox61;
-    private javax.swing.JCheckBox jCheckBox62;
-    private javax.swing.JCheckBox jCheckBox63;
-    private javax.swing.JCheckBox jCheckBox64;
-    private javax.swing.JCheckBox jCheckBox65;
-    private javax.swing.JCheckBox jCheckBox66;
-    private javax.swing.JCheckBox jCheckBox67;
-    private javax.swing.JCheckBox jCheckBox68;
-    private javax.swing.JCheckBox jCheckBox69;
-    private javax.swing.JCheckBox jCheckBox70;
-    private javax.swing.JCheckBox jCheckBox71;
     private javax.swing.JDialog jDialoge;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtData;
+    private javax.swing.JCheckBox lang1A;
+    private javax.swing.JCheckBox lang1B;
+    private javax.swing.JCheckBox lang2A;
+    private javax.swing.JCheckBox lang2B;
     private javax.swing.JLabel lblArts;
     private javax.swing.JLabel lblAth;
     private javax.swing.JLabel lblEng;
@@ -2435,6 +3039,8 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JLabel lblTitle;
     private javax.swing.JMenuItem mnuCreateDataSheet;
     private javax.swing.JMenuItem mnuImport;
+    private javax.swing.JCheckBox orchA;
+    private javax.swing.JCheckBox orchB;
     private javax.swing.JPanel panChooser;
     private javax.swing.JCheckBox s3A;
     private javax.swing.JCheckBox s3B;
@@ -2444,6 +3050,10 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox s4C;
     private javax.swing.JCheckBox slA;
     private javax.swing.JCheckBox slB;
+    private javax.swing.JCheckBox techA;
+    private javax.swing.JCheckBox techB;
+    private javax.swing.JCheckBox theaterA;
+    private javax.swing.JCheckBox theaterB;
     private javax.swing.JTextField txtSearchBar;
     // End of variables declaration//GEN-END:variables
 }

@@ -44,41 +44,36 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblArts" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox53" min="-2" max="-2" attributes="0"/>
+                                  <Component id="artA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox54" min="-2" max="-2" attributes="0"/>
+                                  <Component id="artB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox55" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bandA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox56" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bandB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox57" min="-2" max="-2" attributes="0"/>
+                                  <Component id="choirA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox58" min="-2" max="-2" attributes="0"/>
+                                  <Component id="choirB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox59" min="-2" max="-2" attributes="0"/>
+                                  <Component id="danceA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox60" min="-2" max="-2" attributes="0"/>
+                                  <Component id="danceB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox61" min="-2" max="-2" attributes="0"/>
+                                  <Component id="orchA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox62" min="-2" max="-2" attributes="0"/>
+                                  <Component id="orchB" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox63" min="-2" max="-2" attributes="0"/>
+                                  <Component id="theaterA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jCheckBox64" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="lblSpeech" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox69" min="-2" max="-2" attributes="0"/>
+                                  <Component id="theaterB" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblTOK" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox70" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TOKA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox71" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TOKB" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblHealth" min="-2" max="-2" attributes="0"/>
@@ -152,9 +147,9 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblAth" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox49" min="-2" max="-2" attributes="0"/>
+                                  <Component id="athA" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jCheckBox50" min="-2" max="-2" attributes="0"/>
+                                  <Component id="athB" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="lblEng" min="-2" max="-2" attributes="0"/>
@@ -185,20 +180,20 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="lblLang" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox65" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lang1A" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jCheckBox66" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lang1B" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox67" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lang2A" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jCheckBox68" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lang2B" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
                                           <Component id="lblTech" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox51" min="-2" max="-2" attributes="0"/>
+                                          <Component id="techA" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jCheckBox52" min="-2" max="-2" attributes="0"/>
+                                          <Component id="techB" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -209,6 +204,12 @@
                               </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblSpeech" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="comm" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -295,49 +296,49 @@
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblAth" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox49" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox50" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="athA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="athB" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblTech" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox51" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox52" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="techA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="techB" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblArts" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox53" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox54" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox55" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox56" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox57" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox58" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox59" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox60" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox61" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox62" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox63" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox64" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="artA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="artB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bandA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bandB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="choirA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="choirB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="danceA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="danceB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="orchA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="orchB" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="theaterA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="theaterB" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblLang" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox65" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox66" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox67" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox68" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lang1A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lang1B" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lang2A" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lang2B" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblSpeech" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox69" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comm" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblTOK" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox70" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jCheckBox71" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TOKA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TOKB" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="7" max="32767" attributes="0"/>
                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
@@ -827,120 +828,189 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CMhlthBActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox49">
+        <Component class="javax.swing.JCheckBox" name="athA">
           <Properties>
             <Property name="text" type="java.lang.String" value="PE/Athletics A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="athAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox50">
+        <Component class="javax.swing.JCheckBox" name="athB">
           <Properties>
             <Property name="text" type="java.lang.String" value="PE/Athletics B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="athBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox51">
+        <Component class="javax.swing.JCheckBox" name="techA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tech A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="techAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox52">
+        <Component class="javax.swing.JCheckBox" name="techB">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tech B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="techBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox53">
+        <Component class="javax.swing.JCheckBox" name="artA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Art A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="artAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox54">
+        <Component class="javax.swing.JCheckBox" name="artB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="artBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox55">
+        <Component class="javax.swing.JCheckBox" name="bandA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Band A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bandAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox56">
+        <Component class="javax.swing.JCheckBox" name="bandB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bandBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox57">
+        <Component class="javax.swing.JCheckBox" name="choirA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Choir A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="choirAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox58">
+        <Component class="javax.swing.JCheckBox" name="choirB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="choirBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox59">
+        <Component class="javax.swing.JCheckBox" name="danceA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dance A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="danceAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox60">
+        <Component class="javax.swing.JCheckBox" name="danceB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="danceBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox61">
+        <Component class="javax.swing.JCheckBox" name="orchA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Orch. A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="orchAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox62">
+        <Component class="javax.swing.JCheckBox" name="orchB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="orchBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox63">
+        <Component class="javax.swing.JCheckBox" name="theaterA">
           <Properties>
             <Property name="text" type="java.lang.String" value="Theater A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="theaterAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox64">
+        <Component class="javax.swing.JCheckBox" name="theaterB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="theaterBActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox65">
+        <Component class="javax.swing.JCheckBox" name="lang1A">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lang1 A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lang1AActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox66">
+        <Component class="javax.swing.JCheckBox" name="lang1B">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lang1BActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox67">
+        <Component class="javax.swing.JCheckBox" name="lang2A">
           <Properties>
             <Property name="text" type="java.lang.String" value="Lang2 A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lang2AActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox68">
+        <Component class="javax.swing.JCheckBox" name="lang2B">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lang2BActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox69">
+        <Component class="javax.swing.JCheckBox" name="comm">
           <Properties>
             <Property name="text" type="java.lang.String" value="Prof. Comm."/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="commActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox70">
+        <Component class="javax.swing.JCheckBox" name="TOKA">
           <Properties>
             <Property name="text" type="java.lang.String" value="A"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TOKAActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="jCheckBox71">
+        <Component class="javax.swing.JCheckBox" name="TOKB">
           <Properties>
             <Property name="text" type="java.lang.String" value="B"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TOKBActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
