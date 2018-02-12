@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package View;
-import java.awt.Component;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -15,6 +14,8 @@ import javax.swing.RowFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
+import javax.swing.text.DateFormatter;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -1011,6 +1012,9 @@ public class ViewGUI extends javax.swing.JFrame
                         .addGap(0, 28, Short.MAX_VALUE))
                     .addGroup(jDialogeLayout.createSequentialGroup()
                         .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jButton1))
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jDialogeLayout.createSequentialGroup()
@@ -1028,17 +1032,13 @@ public class ViewGUI extends javax.swing.JFrame
                                         .addGap(18, 18, 18)
                                         .addComponent(techA)
                                         .addGap(18, 18, 18)
-                                        .addComponent(techB)))
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jButton1)))
-                        .addContainerGap())
-                    .addGroup(jDialogeLayout.createSequentialGroup()
-                        .addComponent(lblSpeech)
-                        .addGap(18, 18, 18)
-                        .addComponent(comm)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                        .addComponent(techB))
+                                    .addGroup(jDialogeLayout.createSequentialGroup()
+                                        .addComponent(lblSpeech)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(comm)))
+                                .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -1282,7 +1282,7 @@ public class ViewGUI extends javax.swing.JFrame
                         .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(114, 114, 114)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(157, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1545,24 +1545,181 @@ public class ViewGUI extends javax.swing.JFrame
     public void clearDialoge()
     {
        JCheckBox [] boxes = new JCheckBox[71];
-//       Component [] components = jDialoge.getComponents();
-//       
-//       for(Component a : components)
-//         if(a instanceOf JCheckBox)
-//            a.check = false;
-            
+       boxes [0] = eng1A;
+       boxes [1] = eng1B;
+       boxes [2] = eng2A;
+       boxes [3] = eng2B;
+       boxes [4] = eng3A;
+       boxes [5] = eng3B;
+       boxes [6] = eng4A;
+       boxes [7] = eng4B;
+       boxes [8] = algA;
+       boxes [9] = algB;
+       boxes [10] = geomA;
+       boxes [11] = geomB;
+       boxes [12] = alg2A;
+       boxes [13] = alg2B;
+       boxes [14] = slA;
+       boxes [15] = slB;
+       boxes [16] = hlA;
+       boxes [17] = hlB;
+       boxes [18] = hlC;
+       boxes [19] = bioA;
+       boxes [20] = bioB;
+       boxes [21] = chemA;
+       boxes [22] = chemB;
+       boxes [23] = s3A;
+       boxes [24] = s3B;
+       boxes [25] = s3C;
+       boxes [26] = s4A;
+       boxes [27] = s4B;
+       boxes [28] = s4C;
+       boxes [29] = WGA;
+       boxes [30] = WGB;
+       boxes [31] = WHA;
+       boxes [32] = WHB;
+       boxes [33] = HOAA;
+       boxes [34] = HOAB;
+       boxes [35] = CENTA;
+       boxes [36] = CENTB;
+       boxes [37] = ECON;
+       boxes [38] = HLTH;
+       boxes [39] = HSA;
+       boxes [40] = HSB;
+       boxes [41] = HSCIA;
+       boxes [42] = HSCIB;
+       boxes [43] = COS1A;
+       boxes [44] = COS1B;
+       boxes [45] = COS1C;
+       boxes [46] = CMhlthA;
+       boxes [47] = CMhlthB;
+       boxes [48] = athA;
+       boxes [49] = athB;
+       boxes [50] = techA;
+       boxes [51] = techB;
+       boxes [52] = artA;
+       boxes [53] = artB;
+       boxes [54] = bandA;
+       boxes [55] = bandB;
+       boxes [56] = choirA;
+       boxes [57] = choirB;
+       boxes [58] = danceA;
+       boxes [59] = danceB;
+       boxes [60] = orchA;
+       boxes [61] = orchB;
+       boxes [62] = theaterA;
+       boxes [63] = theaterB;
+       boxes [64] = lang1A;
+       boxes [65] = lang1B;
+       boxes [66] = lang2A;
+       boxes [67] = lang2B;
+       boxes [68] = comm;
+       boxes [69] = TOKA;
+       boxes [70] = TOKB;
+       
+       for(int x = 0; x < boxes.length; x++)
+           boxes[x].setSelected(false);
+
+       
+       
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
-        jDialoge.dispose();// TODO add your handling code here:
+        jDialoge.dispose();
+        clearDialoge();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jtDataMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jtDataMouseClicked
     {//GEN-HEADEREND:event_jtDataMouseClicked
+       clearDialoge();
         int rowIndex = jtData.rowAtPoint(evt.getPoint());
-        rowSelected = rowIndex+1;
-        jDialoge.setVisible(true);
+       rowSelected = rowIndex+1;
+       JCheckBox [] boxes = new JCheckBox[71];
+       boxes [0] = eng1A;
+       boxes [1] = eng1B;
+       boxes [2] = eng2A;
+       boxes [3] = eng2B;
+       boxes [4] = eng3A;
+       boxes [5] = eng3B;
+       boxes [6] = eng4A;
+       boxes [7] = eng4B;
+       boxes [8] = algA;
+       boxes [9] = algB;
+       boxes [10] = geomA;
+       boxes [11] = geomB;
+       boxes [12] = alg2A;
+       boxes [13] = alg2B;
+       boxes [14] = slA;
+       boxes [15] = slB;
+       boxes [16] = hlA;
+       boxes [17] = hlB;
+       boxes [18] = hlC;
+       boxes [19] = bioA;
+       boxes [20] = bioB;
+       boxes [21] = chemA;
+       boxes [22] = chemB;
+       boxes [23] = s3A;
+       boxes [24] = s3B;
+       boxes [25] = s3C;
+       boxes [26] = s4A;
+       boxes [27] = s4B;
+       boxes [28] = s4C;
+       boxes [29] = WGA;
+       boxes [30] = WGB;
+       boxes [31] = WHA;
+       boxes [32] = WHB;
+       boxes [33] = HOAA;
+       boxes [34] = HOAB;
+       boxes [35] = CENTA;
+       boxes [36] = CENTB;
+       boxes [37] = ECON;
+       boxes [38] = HLTH;
+       boxes [39] = HSA;
+       boxes [40] = HSB;
+       boxes [41] = HSCIA;
+       boxes [42] = HSCIB;
+       boxes [43] = COS1A;
+       boxes [44] = COS1B;
+       boxes [45] = COS1C;
+       boxes [46] = CMhlthA;
+       boxes [47] = CMhlthB;
+       boxes [48] = athA;
+       boxes [49] = athB;
+       boxes [50] = techA;
+       boxes [51] = techB;
+       boxes [52] = artA;
+       boxes [53] = artB;
+       boxes [54] = bandA;
+       boxes [55] = bandB;
+       boxes [56] = choirA;
+       boxes [57] = choirB;
+       boxes [58] = danceA;
+       boxes [59] = danceB;
+       boxes [60] = orchA;
+       boxes [61] = orchB;
+       boxes [62] = theaterA;
+       boxes [63] = theaterB;
+       boxes [64] = lang1A;
+       boxes [65] = lang1B;
+       boxes [66] = lang2A;
+       boxes [67] = lang2B;
+       boxes [68] = comm;
+       boxes [69] = TOKA;
+       boxes [70] = TOKB;
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            for (int x=0;x < boxes.length;x++){
+                XSSFCell cell = row.getCell(x+2);
+                if(cell.getStringCellValue().equals(chx)) 
+                {
+                    boxes[x].setSelected(true);
+                }
+            }
+        } catch(Exception e){System.out.println(e + "u suck");}
         
+        jDialoge.setVisible(true);
     }//GEN-LAST:event_jtDataMouseClicked
 
     private void eng1AActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_eng1AActionPerformed
