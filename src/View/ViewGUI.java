@@ -38,28 +38,7 @@ public class ViewGUI extends javax.swing.JFrame
          {
             initComponents();
             
-//             jtData.getSelectionModel().addListSelectionListener(new ListSelectionListener()
-//             {
-//                 @Override
-//                 public void valueChanged(ListSelectionEvent event)
-//                 {
-//                     if (!jtData.getSelectionModel().isSelectionEmpty())
-//                     {
-//                         int selectedRow = jtData.getSelectionModel().getMinSelectionIndex();
-//                         final JPanel panel = new JPanel();
-//                         final JRadioButton button1 = new JRadioButton("pre-Calculus A");
-//                         final JRadioButton button2 = new JRadioButton("pre-Calculus B");
-//
-//                         panel.add(button1);
-//                         panel.add(button2);
-//
-//                         JOptionPane.showMessageDialog(null, panel);
-//                         //JOptionPane.showMessageDialog(null, "Selected Row" + selectedRow);
-//                     }
-//                     //System.out.println(jtData.getValueAt(jtData.getSelectedRow(), 0).toString());
-//                 }
-//
-//             });
+//  
                         }
 
 
@@ -1710,14 +1689,16 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
+            DataFormatter df = new DataFormatter();
             for (int x=0;x < boxes.length;x++){
                 XSSFCell cell = row.getCell(x+2);
-                if(cell.getStringCellValue().equals(chx)) 
+                if(!df.formatCellValue(cell).equals(""))
                 {
                     boxes[x].setSelected(true);
                 }
             }
-        } catch(Exception e){System.out.println(e + "u suck");}
+        } catch(Exception e){System.out.
+                println(e + "error");}
         
         jDialoge.setVisible(true);
     }//GEN-LAST:event_jtDataMouseClicked
