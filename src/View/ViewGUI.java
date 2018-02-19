@@ -8,13 +8,13 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import javax.swing.JCheckBox;
 import javax.swing.JFileChooser;
 import javax.swing.RowFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
-import javax.swing.text.DateFormatter;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 
@@ -34,12 +34,91 @@ public class ViewGUI extends javax.swing.JFrame
      */
     int rowSelected;
     public static final String chx = "x";
+//    ArrayList<Student> students = new ArrayList<>();
+    JCheckBox [] boxes = new JCheckBox[80];
         public ViewGUI()
          {
             initComponents();
-            
-//  
-                        }
+       boxes [0] = eng1A;
+       boxes [1] = eng1B;
+       boxes [2] = eng2A;
+       boxes [3] = eng2B;
+       boxes [4] = eng3A;
+       boxes [5] = eng3B;
+       boxes [6] = eng4A;
+       boxes [7] = eng4B;
+       boxes [8] = algA;
+       boxes [9] = algB;
+       boxes [10] = geomA;
+       boxes [11] = geomB;
+       boxes [12] = alg2A;
+       boxes [13] = alg2B;
+       boxes [15] = precal1A;
+       boxes [16] = precal1B;
+       boxes [17] = slA;
+       boxes [18] = slB;
+       boxes [19] = hlA;
+       boxes [20] = hlB;
+       boxes [21] = hlC;
+       boxes [22] = bioA;
+       boxes [23] = bioB;
+       boxes [24] = chemA;
+       boxes [25] = chemB;
+       boxes [26] = s3A;
+       boxes [27] = s3B;
+       boxes [28] = s3C;
+       boxes [29] = s4A;
+       boxes [30] = s4B;
+       boxes [31] = s4C;
+       boxes [32] = WGA;
+       boxes [33] = WGB;
+       boxes [34] = WHA;
+       boxes [35] = WHB;
+       boxes [36] = HOAA;
+       boxes [37] = HOAB;
+       boxes [38] = CENTA;
+       boxes [39] = CENTB;
+       boxes [40] = ECON;
+       boxes [41] = HLTH;
+       boxes [42] = HSA;
+       boxes [43] = HSB;
+       boxes [44] = HSCIA;
+       boxes [45] = HSCIB;
+       boxes [46] = COS1A;
+       boxes [47] = COS1B;
+       boxes [48] = COS1C;
+       boxes [49] = CMhlthA;
+       boxes [50] = CMhlthB;
+       boxes [51] = athA;
+       boxes [52] = athB;
+       boxes [53] = techA;
+       boxes [54] = techB;
+       boxes [55] = artA;
+       boxes [56] = artB;
+       boxes [57] = bandA;
+       boxes [58] = bandB;
+       boxes [59] = choirA;
+       boxes [60] = choirB;
+       boxes [61]= danceA;
+       boxes [62] = danceB;
+       boxes [63] = orchA;
+       boxes [64] = orchB;
+       boxes [65] = theaterA;
+       boxes [66] = theaterB;
+       boxes [67] = lang1A;
+       boxes [68] = lang1B;
+       boxes [69] = lang2A;
+       boxes [70] = lang2B;
+       boxes [71] = lang3A;
+       boxes [72] = lang3B;
+       boxes [73] = lang4A;
+       boxes [74] = lang4B;
+       boxes [75] = lang5A;
+       boxes [76] = lang5B;
+       boxes [77] = comm;
+       boxes [78] = TOKA;
+       boxes [79] = TOKB;
+         }
 
 
     /**
@@ -49,8 +128,7 @@ public class ViewGUI extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jDialoge = new javax.swing.JDialog();
         jButton1 = new javax.swing.JButton();
@@ -137,6 +215,14 @@ public class ViewGUI extends javax.swing.JFrame
         TOKA = new javax.swing.JCheckBox();
         TOKB = new javax.swing.JCheckBox();
         jLabel1 = new javax.swing.JLabel();
+        lang3A = new javax.swing.JCheckBox();
+        lang3B = new javax.swing.JCheckBox();
+        lang4A = new javax.swing.JCheckBox();
+        lang4B = new javax.swing.JCheckBox();
+        lang5A = new javax.swing.JCheckBox();
+        lang5B = new javax.swing.JCheckBox();
+        precal1A = new javax.swing.JCheckBox();
+        precal1B = new javax.swing.JCheckBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtData = new javax.swing.JTable();
         panChooser = new javax.swing.JPanel();
@@ -149,13 +235,11 @@ public class ViewGUI extends javax.swing.JFrame
         mnuCreateDataSheet = new javax.swing.JMenuItem();
 
         jDialoge.setTitle("Student Info");
-        jDialoge.setMinimumSize(new java.awt.Dimension(860, 530));
+        jDialoge.setMinimumSize(new java.awt.Dimension(900, 560));
 
         jButton1.setText("OK");
-        jButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
@@ -194,646 +278,560 @@ public class ViewGUI extends javax.swing.JFrame
         lblTOK.setText("TOK");
 
         eng1A.setText("1A");
-        eng1A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng1A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng1AActionPerformed(evt);
             }
         });
 
         eng1B.setText("1B");
-        eng1B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng1B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng1BActionPerformed(evt);
             }
         });
 
         eng2A.setText("2A");
-        eng2A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng2A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng2AActionPerformed(evt);
             }
         });
 
         eng2B.setText("2B");
-        eng2B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng2B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng2BActionPerformed(evt);
             }
         });
 
         eng3A.setText("3A");
-        eng3A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng3A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng3AActionPerformed(evt);
             }
         });
 
         eng3B.setText("3B");
-        eng3B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng3B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng3BActionPerformed(evt);
             }
         });
 
         eng4A.setText("4A");
-        eng4A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng4A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng4AActionPerformed(evt);
             }
         });
 
         eng4B.setText("4B");
-        eng4B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        eng4B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eng4BActionPerformed(evt);
             }
         });
 
         algA.setText("Algebra A");
-        algA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        algA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 algAActionPerformed(evt);
             }
         });
 
         algB.setText("B");
-        algB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        algB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 algBActionPerformed(evt);
             }
         });
 
         geomA.setText("Geometry A");
-        geomA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        geomA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 geomAActionPerformed(evt);
             }
         });
 
         geomB.setText("B");
-        geomB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        geomB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 geomBActionPerformed(evt);
             }
         });
 
         alg2A.setText("Algebra 2A");
-        alg2A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        alg2A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alg2AActionPerformed(evt);
             }
         });
 
         alg2B.setText("2B");
-        alg2B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        alg2B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alg2BActionPerformed(evt);
             }
         });
 
         slA.setText("SL A");
-        slA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        slA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 slAActionPerformed(evt);
             }
         });
 
         slB.setText("SL B");
-        slB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        slB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 slBActionPerformed(evt);
             }
         });
 
         hlA.setText("HL A");
-        hlA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        hlA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hlAActionPerformed(evt);
             }
         });
 
         hlB.setText("HL B");
-        hlB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        hlB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hlBActionPerformed(evt);
             }
         });
 
         hlC.setText("HL C");
-        hlC.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        hlC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hlCActionPerformed(evt);
             }
         });
 
         bioA.setText("Bio A");
-        bioA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bioA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bioAActionPerformed(evt);
             }
         });
 
         bioB.setText("B");
-        bioB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bioB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bioBActionPerformed(evt);
             }
         });
 
         chemA.setText("Chem A");
-        chemA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        chemA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chemAActionPerformed(evt);
             }
         });
 
         chemB.setText("B");
-        chemB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        chemB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chemBActionPerformed(evt);
             }
         });
 
         s3A.setText("Sci3 A");
-        s3A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s3A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s3AActionPerformed(evt);
             }
         });
 
         s3B.setText("Sci3 B");
-        s3B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s3B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s3BActionPerformed(evt);
             }
         });
 
         s3C.setText("Sci3 C");
-        s3C.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s3C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s3CActionPerformed(evt);
             }
         });
 
         s4A.setText("Sci4 A");
-        s4A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s4A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s4AActionPerformed(evt);
             }
         });
 
         s4B.setText("Sci4 B");
-        s4B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s4B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s4BActionPerformed(evt);
             }
         });
 
         s4C.setText("Sci4 C");
-        s4C.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        s4C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 s4CActionPerformed(evt);
             }
         });
 
         WGA.setText("World Geog. A");
-        WGA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        WGA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WGAActionPerformed(evt);
             }
         });
 
         WGB.setText("B");
-        WGB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        WGB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WGBActionPerformed(evt);
             }
         });
 
         WHA.setText("World Hist. A");
-        WHA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        WHA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WHAActionPerformed(evt);
             }
         });
 
         WHB.setText("B");
-        WHB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        WHB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WHBActionPerformed(evt);
             }
         });
 
         HOAA.setText("HOA A");
-        HOAA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HOAA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HOAAActionPerformed(evt);
             }
         });
 
         HOAB.setText("B");
-        HOAB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HOAB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HOABActionPerformed(evt);
             }
         });
 
         CENTA.setText("20th Cent. A");
-        CENTA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CENTA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CENTAActionPerformed(evt);
             }
         });
 
         CENTB.setText("B");
-        CENTB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CENTB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CENTBActionPerformed(evt);
             }
         });
 
         ECON.setText("Econ AP/IB/Dual");
-        ECON.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        ECON.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ECONActionPerformed(evt);
             }
         });
 
         HLTH.setText("Health");
-        HLTH.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HLTH.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HLTHActionPerformed(evt);
             }
         });
 
         HSA.setText("Hum. Service A");
-        HSA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HSA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HSAActionPerformed(evt);
             }
         });
 
         HSB.setText("B");
-        HSB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HSB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HSBActionPerformed(evt);
             }
         });
 
         HSCIA.setText("Health Sci. A");
-        HSCIA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HSCIA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HSCIAActionPerformed(evt);
             }
         });
 
         HSCIB.setText("B");
-        HSCIB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        HSCIB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HSCIBActionPerformed(evt);
             }
         });
 
         COS1A.setText("Cosmo1 A");
-        COS1A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        COS1A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 COS1AActionPerformed(evt);
             }
         });
 
         COS1B.setText("B");
-        COS1B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        COS1B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 COS1BActionPerformed(evt);
             }
         });
 
         COS1C.setText("C");
-        COS1C.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        COS1C.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 COS1CActionPerformed(evt);
             }
         });
 
         CMhlthA.setText("Coun/Men's Hlth. A");
-        CMhlthA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CMhlthA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CMhlthAActionPerformed(evt);
             }
         });
 
         CMhlthB.setText("B");
-        CMhlthB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        CMhlthB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CMhlthBActionPerformed(evt);
             }
         });
 
         athA.setText("PE/Athletics A");
-        athA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        athA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 athAActionPerformed(evt);
             }
         });
 
         athB.setText("PE/Athletics B");
-        athB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        athB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 athBActionPerformed(evt);
             }
         });
 
         techA.setText("Tech A");
-        techA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        techA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 techAActionPerformed(evt);
             }
         });
 
         techB.setText("Tech B");
-        techB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        techB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 techBActionPerformed(evt);
             }
         });
 
         artA.setText("Art A");
-        artA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        artA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 artAActionPerformed(evt);
             }
         });
 
         artB.setText("B");
-        artB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        artB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 artBActionPerformed(evt);
             }
         });
 
         bandA.setText("Band A");
-        bandA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bandA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bandAActionPerformed(evt);
             }
         });
 
         bandB.setText("B");
-        bandB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bandB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bandBActionPerformed(evt);
             }
         });
 
         choirA.setText("Choir A");
-        choirA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        choirA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 choirAActionPerformed(evt);
             }
         });
 
         choirB.setText("B");
-        choirB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        choirB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 choirBActionPerformed(evt);
             }
         });
 
         danceA.setText("Dance A");
-        danceA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        danceA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 danceAActionPerformed(evt);
             }
         });
 
         danceB.setText("B");
-        danceB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        danceB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 danceBActionPerformed(evt);
             }
         });
 
         orchA.setText("Orch. A");
-        orchA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        orchA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 orchAActionPerformed(evt);
             }
         });
 
         orchB.setText("B");
-        orchB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        orchB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 orchBActionPerformed(evt);
             }
         });
 
         theaterA.setText("Theater A");
-        theaterA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        theaterA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 theaterAActionPerformed(evt);
             }
         });
 
         theaterB.setText("B");
-        theaterB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        theaterB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 theaterBActionPerformed(evt);
             }
         });
 
         lang1A.setText("Lang1 A");
-        lang1A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        lang1A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lang1AActionPerformed(evt);
             }
         });
 
         lang1B.setText("B");
-        lang1B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        lang1B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lang1BActionPerformed(evt);
             }
         });
 
         lang2A.setText("Lang2 A");
-        lang2A.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        lang2A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lang2AActionPerformed(evt);
             }
         });
 
         lang2B.setText("B");
-        lang2B.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        lang2B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lang2BActionPerformed(evt);
             }
         });
 
         comm.setText("Prof. Comm.");
-        comm.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        comm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 commActionPerformed(evt);
             }
         });
 
         TOKA.setText("A");
-        TOKA.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        TOKA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TOKAActionPerformed(evt);
             }
         });
 
         TOKB.setText("B");
-        TOKB.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        TOKB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TOKBActionPerformed(evt);
             }
         });
 
         jLabel1.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 13)); // NOI18N
         jLabel1.setText("Student Classes");
+
+        lang3A.setText("Lang3 A");
+        lang3A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang3AActionPerformed(evt);
+            }
+        });
+
+        lang3B.setText("B");
+        lang3B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang3BActionPerformed(evt);
+            }
+        });
+
+        lang4A.setText("Lang4A");
+        lang4A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang4AActionPerformed(evt);
+            }
+        });
+
+        lang4B.setText("B");
+        lang4B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang4BActionPerformed(evt);
+            }
+        });
+
+        lang5A.setText("Lang5 A");
+        lang5A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang5AActionPerformed(evt);
+            }
+        });
+
+        lang5B.setText("B");
+        lang5B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lang5BActionPerformed(evt);
+            }
+        });
+
+        precal1A.setText("Precal1A");
+        precal1A.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                precal1AActionPerformed(evt);
+            }
+        });
+
+        precal1B.setText("Precal1B");
+        precal1B.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                precal1BActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialogeLayout = new javax.swing.GroupLayout(jDialoge.getContentPane());
         jDialoge.getContentPane().setLayout(jDialogeLayout);
@@ -921,30 +919,6 @@ public class ViewGUI extends javax.swing.JFrame
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(CMhlthB))
                             .addGroup(jDialogeLayout.createSequentialGroup()
-                                .addComponent(lblMath)
-                                .addGap(18, 18, 18)
-                                .addComponent(algA)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(algB)
-                                .addGap(18, 18, 18)
-                                .addComponent(geomA)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(geomB)
-                                .addGap(18, 18, 18)
-                                .addComponent(alg2A)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(alg2B)
-                                .addGap(18, 18, 18)
-                                .addComponent(slA)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(slB)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(hlA)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(hlB)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(hlC))
-                            .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addComponent(lblSS)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(WGA)
@@ -988,7 +962,7 @@ public class ViewGUI extends javax.swing.JFrame
                                 .addComponent(eng4A)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(eng4B)))
-                        .addGap(0, 28, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jDialogeLayout.createSequentialGroup()
                         .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
@@ -996,16 +970,6 @@ public class ViewGUI extends javax.swing.JFrame
                                 .addComponent(jButton1))
                             .addGroup(jDialogeLayout.createSequentialGroup()
                                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jDialogeLayout.createSequentialGroup()
-                                        .addComponent(lblLang)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lang1A)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lang1B)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lang2A)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(lang2B))
                                     .addGroup(jDialogeLayout.createSequentialGroup()
                                         .addComponent(lblTech)
                                         .addGap(18, 18, 18)
@@ -1015,9 +979,60 @@ public class ViewGUI extends javax.swing.JFrame
                                     .addGroup(jDialogeLayout.createSequentialGroup()
                                         .addComponent(lblSpeech)
                                         .addGap(18, 18, 18)
-                                        .addComponent(comm)))
+                                        .addComponent(comm))
+                                    .addGroup(jDialogeLayout.createSequentialGroup()
+                                        .addComponent(lblLang)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(lang1A)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lang1B)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lang2A)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lang2B)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lang3A)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lang3B)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lang4A)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lang4B)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(lang5A)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lang5B)))
                                 .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())))
+                        .addContainerGap())
+                    .addGroup(jDialogeLayout.createSequentialGroup()
+                        .addComponent(lblMath)
+                        .addGap(18, 18, 18)
+                        .addComponent(algA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(algB)
+                        .addGap(18, 18, 18)
+                        .addComponent(geomA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(geomB)
+                        .addGap(18, 18, 18)
+                        .addComponent(alg2A)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(alg2B)
+                        .addGap(18, 18, 18)
+                        .addComponent(precal1A)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(precal1B)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(slA)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(slB)
+                        .addGap(18, 18, 18)
+                        .addComponent(hlA)
+                        .addGap(2, 2, 2)
+                        .addComponent(hlB)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(hlC)
+                        .addGap(42, 42, 42))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialogeLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -1052,7 +1067,9 @@ public class ViewGUI extends javax.swing.JFrame
                     .addComponent(slB)
                     .addComponent(hlA)
                     .addComponent(hlB)
-                    .addComponent(hlC))
+                    .addComponent(hlC)
+                    .addComponent(precal1A)
+                    .addComponent(precal1B))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSci)
@@ -1122,7 +1139,13 @@ public class ViewGUI extends javax.swing.JFrame
                     .addComponent(lang1A)
                     .addComponent(lang1B)
                     .addComponent(lang2A)
-                    .addComponent(lang2B))
+                    .addComponent(lang2B)
+                    .addComponent(lang3A)
+                    .addComponent(lang3B)
+                    .addComponent(lang4A)
+                    .addComponent(lang4B)
+                    .addComponent(lang5A)
+                    .addComponent(lang5B))
                 .addGap(18, 18, 18)
                 .addGroup(jDialogeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblSpeech)
@@ -1132,7 +1155,7 @@ public class ViewGUI extends javax.swing.JFrame
                     .addComponent(lblTOK)
                     .addComponent(TOKA)
                     .addComponent(TOKB))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -1146,46 +1169,36 @@ public class ViewGUI extends javax.swing.JFrame
 
         jtData.setBackground(new java.awt.Color(204, 233, 247));
         jtData.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
 
             },
-            new String []
-            {
+            new String [] {
                 "ID ", "Name"
             }
-        )
-        {
-            Class[] types = new Class []
-            {
+        ) {
+            Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class
             };
-            boolean[] canEdit = new boolean []
-            {
+            boolean[] canEdit = new boolean [] {
                 false, false
             };
 
-            public Class getColumnClass(int columnIndex)
-            {
+            public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
 
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
         jtData.getTableHeader().setReorderingAllowed(false);
-        jtData.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        jtData.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jtDataMouseClicked(evt);
             }
         });
         jScrollPane1.setViewportView(jtData);
-        if (jtData.getColumnModel().getColumnCount() > 0)
-        {
+        if (jtData.getColumnModel().getColumnCount() > 0) {
             jtData.getColumnModel().getColumn(0).setResizable(false);
             jtData.getColumnModel().getColumn(1).setResizable(false);
         }
@@ -1204,14 +1217,11 @@ public class ViewGUI extends javax.swing.JFrame
         lblTitle.setFont(new java.awt.Font("Franklin Gothic Medium Cond", 1, 18)); // NOI18N
         lblTitle.setText("Incoming IB Sophomores");
 
-        lblIcon.setIcon(new javax.swing.ImageIcon("H:\\Comp sci IA\\Webp.net-resizeimage.png")); // NOI18N
+        lblIcon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Ryan\\Downloads\\Webp.net-resizeimage.png")); // NOI18N
         lblIcon.setText("ib");
 
-        txtSearchBar.setForeground(new java.awt.Color(0, 0, 0));
-        txtSearchBar.addKeyListener(new java.awt.event.KeyAdapter()
-        {
-            public void keyReleased(java.awt.event.KeyEvent evt)
-            {
+        txtSearchBar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtSearchBarKeyReleased(evt);
             }
         });
@@ -1220,10 +1230,8 @@ public class ViewGUI extends javax.swing.JFrame
 
         mnuImport.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.CTRL_MASK));
         mnuImport.setText("Import File");
-        mnuImport.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        mnuImport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuImportActionPerformed(evt);
             }
         });
@@ -1231,10 +1239,8 @@ public class ViewGUI extends javax.swing.JFrame
 
         mnuCreateDataSheet.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
         mnuCreateDataSheet.setText("Create Data Sheet");
-        mnuCreateDataSheet.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        mnuCreateDataSheet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuCreateDataSheetActionPerformed(evt);
             }
         });
@@ -1274,7 +1280,7 @@ public class ViewGUI extends javax.swing.JFrame
                         .addComponent(txtSearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(panChooser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1290,7 +1296,8 @@ public class ViewGUI extends javax.swing.JFrame
      int returnVal = chooser.showOpenDialog(panChooser);
      if(returnVal == JFileChooser.APPROVE_OPTION)
      {
-        try {
+        try
+        {
       
          String name;
          int IDNumber;
@@ -1366,137 +1373,153 @@ public class ViewGUI extends javax.swing.JFrame
                 XSSFCell r1c14 = row1.createCell(15);
 		r1c14.setCellValue("ALG2 B");
                 XSSFCell r1c15 = row1.createCell(16);
-		r1c15.setCellValue("SLMATH A");
+                r1c15.setCellValue("precal1A");
                 XSSFCell r1c16 = row1.createCell(17);
-		r1c16.setCellValue("SLMATH B");
+                r1c16.setCellValue("precal2B");
                 XSSFCell r1c17 = row1.createCell(18);
-		r1c17.setCellValue("HLMATCH A");
+		r1c17.setCellValue("SLMATH A");
                 XSSFCell r1c18 = row1.createCell(19);
-		r1c18.setCellValue("HLMATH B");
+		r1c18.setCellValue("SLMATH B");
                 XSSFCell r1c19 = row1.createCell(20);
-		r1c19.setCellValue("HLMATH C");
+		r1c19.setCellValue("HLMATCH A");
+                XSSFCell r1c20 = row1.createCell(21);
+		r1c20.setCellValue("HLMATH B");
+                XSSFCell r1c21 = row1.createCell(22);
+		r1c21.setCellValue("HLMATH C");
                 
                 //Science 
-                XSSFCell r1c20 = row1.createCell(21);
-		r1c20.setCellValue("BIO A");
-                XSSFCell r1c21 = row1.createCell(22);
-		r1c21.setCellValue("BIO B");
                 XSSFCell r1c22 = row1.createCell(23);
-		r1c22.setCellValue("CHEM A");
+		r1c22.setCellValue("BIO A");
                 XSSFCell r1c23 = row1.createCell(24);
-		r1c23.setCellValue("CHEM B");
+		r1c23.setCellValue("BIO B");
                 XSSFCell r1c24 = row1.createCell(25);
-		r1c24.setCellValue("SCI3 A");
+		r1c24.setCellValue("CHEM A");
                 XSSFCell r1c25 = row1.createCell(26);
-		r1c25.setCellValue("SCI3 B");
+		r1c25.setCellValue("CHEM B");
                 XSSFCell r1c26 = row1.createCell(27);
-		r1c26.setCellValue("SCI3 C");
+		r1c26.setCellValue("SCI3 A");
                 XSSFCell r1c27 = row1.createCell(28);
-		r1c27.setCellValue("SCI4 A");
+		r1c27.setCellValue("SCI3 B");
                 XSSFCell r1c28 = row1.createCell(29);
-		r1c28.setCellValue("SCI4 B");
+		r1c28.setCellValue("SCI3 C");
                 XSSFCell r1c29 = row1.createCell(30);
-		r1c29.setCellValue("SCI4 C");
+		r1c29.setCellValue("SCI4 A");
+                XSSFCell r1c30 = row1.createCell(31);
+		r1c30.setCellValue("SCI4 B");
+                XSSFCell r1c31 = row1.createCell(32);
+		r1c31.setCellValue("SCI4 C");
                 
                 //Social Studies
-                XSSFCell r1c30 = row1.createCell(31);
-                r1c30.setCellValue("WORLD GEO A");
-                XSSFCell r1c31 = row1.createCell(32);
-                r1c31.setCellValue("WORLD GEO B");
                 XSSFCell r1c32 = row1.createCell(33);
-                r1c32.setCellValue("WORLD HIST A");
+                r1c32.setCellValue("WORLD GEO A");
                 XSSFCell r1c33 = row1.createCell(34);
-                r1c33.setCellValue("WORLD HIST B");
+                r1c33.setCellValue("WORLD GEO B");
                 XSSFCell r1c34 = row1.createCell(35);
-                r1c34.setCellValue("HOA A");
+                r1c34.setCellValue("WORLD HIST A");
                 XSSFCell r1c35 = row1.createCell(36);
-                r1c35.setCellValue("HOA B");
+                r1c35.setCellValue("WORLD HIST B");
                 XSSFCell r1c36 = row1.createCell(37);
-                r1c36.setCellValue("2OTH CENTURY A");
+                r1c36.setCellValue("HOA A");
                 XSSFCell r1c37 = row1.createCell(38);
-                r1c37.setCellValue("20TH CENTURY B");
+                r1c37.setCellValue("HOA B");
                 XSSFCell r1c38 = row1.createCell(39);
-                r1c38.setCellValue("ECON AP/IB/DUAL");
+                r1c38.setCellValue("2OTH CENTURY A");
+                XSSFCell r1c39 = row1.createCell(40);
+                r1c39.setCellValue("20TH CENTURY B");
+                XSSFCell r1c40 = row1.createCell(41);
+                r1c40.setCellValue("ECON AP/IB/DUAL");
                 
                 //Health
-                XSSFCell r1c39 = row1.createCell(40);
-                r1c39.setCellValue("HEALTH");
-                XSSFCell r1c40 = row1.createCell(41);
-                r1c40.setCellValue("HUM SERVICE A");
                 XSSFCell r1c41 = row1.createCell(42);
-                r1c41.setCellValue("HUM SERVICE B");
+                r1c41.setCellValue("HEALTH");
                 XSSFCell r1c42 = row1.createCell(43);
-                r1c42.setCellValue("HLTH SCIENCE A");
+                r1c42.setCellValue("HUM SERVICE A");
                 XSSFCell r1c43 = row1.createCell(44);
-                r1c43.setCellValue("HLTH SCIENCE B");
+                r1c43.setCellValue("HUM SERVICE B");
                 XSSFCell r1c44 = row1.createCell(45);
-                r1c44.setCellValue("COSMO1 A");
+                r1c44.setCellValue("HLTH SCIENCE A");
                 XSSFCell r1c45 = row1.createCell(46);
-                r1c45.setCellValue("COSMO1 B");
+                r1c45.setCellValue("HLTH SCIENCE B");
                 XSSFCell r1c46 = row1.createCell(47);
-                r1c46.setCellValue("COSMO1 C");
+                r1c46.setCellValue("COSMO1 A");
                 XSSFCell r1c47 = row1.createCell(48);
-                r1c47.setCellValue("COUN/MEN HLTH A");
+                r1c47.setCellValue("COSMO1 B");
                 XSSFCell r1c48 = row1.createCell(49);
-                r1c48.setCellValue("COUN/MEN HLTH B");
+                r1c48.setCellValue("COSMO1 C");
+                XSSFCell r1c49 = row1.createCell(50);
+                r1c49.setCellValue("COUN/MEN HLTH A");
+                XSSFCell r1c50 = row1.createCell(51);
+                r1c50.setCellValue("COUN/MEN HLTH B");
                 
                 //PE/Athletics
-                XSSFCell r1c49 = row1.createCell(50);
-                r1c49.setCellValue("PE/ATHLT A");
-                XSSFCell r1c50 = row1.createCell(51);
-                r1c50.setCellValue("PE/ATHLT B");
+                XSSFCell r1c51 = row1.createCell(52);
+                r1c51.setCellValue("PE/ATHLT A");
+                XSSFCell r1c52 = row1.createCell(53);
+                r1c52.setCellValue("PE/ATHLT B");
                 
                 //Technology
-                XSSFCell r1c51 = row1.createCell(52);
-                r1c51.setCellValue("TECH A");
-                XSSFCell r1c52 = row1.createCell(53);
-                r1c52.setCellValue("TECH B");
+                XSSFCell r1c53 = row1.createCell(54);
+                r1c53.setCellValue("TECH A");
+                XSSFCell r1c54 = row1.createCell(55);
+                r1c54.setCellValue("TECH B");
                 
                 //Fine Arts
-                XSSFCell r1c53 = row1.createCell(54);
-                r1c53.setCellValue("ART A");
-                XSSFCell r1c54 = row1.createCell(55);
-                r1c54.setCellValue("ART B");
                 XSSFCell r1c55 = row1.createCell(56);
-                r1c55.setCellValue("BAND A");
+                r1c55.setCellValue("ART A");
                 XSSFCell r1c56 = row1.createCell(57);
-                r1c56.setCellValue("BAND B");
+                r1c56.setCellValue("ART B");
                 XSSFCell r1c57 = row1.createCell(58);
-                r1c57.setCellValue("CHOIR A");
+                r1c57.setCellValue("BAND A");
                 XSSFCell r1c58 = row1.createCell(59);
-                r1c58.setCellValue("CHOIR B");
+                r1c58.setCellValue("BAND B");
                 XSSFCell r1c59 = row1.createCell(60);
-                r1c59.setCellValue("DANCE A");
+                r1c59.setCellValue("CHOIR A");
                 XSSFCell r1c60 = row1.createCell(61);
-                r1c60.setCellValue("DANCE B");
+                r1c60.setCellValue("CHOIR B");
                 XSSFCell r1c61 = row1.createCell(62);
-                r1c61.setCellValue("ORCH A");
+                r1c61.setCellValue("DANCE A");
                 XSSFCell r1c62 = row1.createCell(63);
-                r1c62.setCellValue("ORCH B");
+                r1c62.setCellValue("DANCE B");
                 XSSFCell r1c63 = row1.createCell(64);
-                r1c63.setCellValue("THEATER A");
+                r1c63.setCellValue("ORCH A");
                 XSSFCell r1c64 = row1.createCell(65);
-                r1c64.setCellValue("THEATER B");
+                r1c64.setCellValue("ORCH B");
+                XSSFCell r1c65 = row1.createCell(66);
+                r1c65.setCellValue("THEATER A");
+                XSSFCell r1c66 = row1.createCell(67);
+                r1c66.setCellValue("THEATER B");
                 
                 //World Languages
-                XSSFCell r1c65 = row1.createCell(66);
-                r1c65.setCellValue("LANG1 A");
-                XSSFCell r1c66 = row1.createCell(67);
-                r1c66.setCellValue("LANG1 B");
                 XSSFCell r1c67 = row1.createCell(68);
-                r1c67.setCellValue("LANG2 A");
+                r1c67.setCellValue("LANG1 A");
                 XSSFCell r1c68 = row1.createCell(69);
-                r1c68.setCellValue("LANG2 B");
+                r1c68.setCellValue("LANG1 B");
+                XSSFCell r1c69 = row1.createCell(70);
+                r1c69.setCellValue("LANG2 A");
+                XSSFCell r1c70 = row1.createCell(71);
+                r1c70.setCellValue("LANG2 B");
+                XSSFCell r1c71 = row1.createCell(72);
+                r1c71.setCellValue("LANG3 A");
+                XSSFCell r1c72 = row1.createCell(73);
+                r1c72.setCellValue("LANG3 B");
+                XSSFCell r1c73 = row1.createCell(74);
+                r1c73.setCellValue("LANG4 A");
+                XSSFCell r1c74 = row1.createCell(75);
+                r1c74.setCellValue("LANG4 B");
+                XSSFCell r1c75 = row1.createCell(76);
+                r1c75.setCellValue("LANG5 A");
+                XSSFCell r1c76 = row1.createCell(77);
+                r1c76.setCellValue("LANG5 B");
                 
                 //Speech
-                XSSFCell r1c69 = row1.createCell(70);
-                r1c69.setCellValue("PROF COMM");
+                XSSFCell r1c77 = row1.createCell(78);
+                r1c77.setCellValue("PROF COMM");
                 
                 //TOK (Theory of Knowledge)
-                XSSFCell r1c70 = row1.createCell(71);
-                r1c70.setCellValue("TOK A");
-                XSSFCell r1c71 = row1.createCell(72);
-                r1c71.setCellValue("TOK B");
+                XSSFCell r1c78 = row1.createCell(79);
+                r1c78.setCellValue("TOK A");
+                XSSFCell r1c79 = row1.createCell(80);
+                r1c79.setCellValue("TOK B");
                 
 		fis.close();
 		FileOutputStream fos =new FileOutputStream(new File("newfile.xlsx"));
@@ -1523,84 +1546,9 @@ public class ViewGUI extends javax.swing.JFrame
     }//GEN-LAST:event_txtSearchBarKeyReleased
     public void clearDialoge()
     {
-       JCheckBox [] boxes = new JCheckBox[71];
-       boxes [0] = eng1A;
-       boxes [1] = eng1B;
-       boxes [2] = eng2A;
-       boxes [3] = eng2B;
-       boxes [4] = eng3A;
-       boxes [5] = eng3B;
-       boxes [6] = eng4A;
-       boxes [7] = eng4B;
-       boxes [8] = algA;
-       boxes [9] = algB;
-       boxes [10] = geomA;
-       boxes [11] = geomB;
-       boxes [12] = alg2A;
-       boxes [13] = alg2B;
-       boxes [14] = slA;
-       boxes [15] = slB;
-       boxes [16] = hlA;
-       boxes [17] = hlB;
-       boxes [18] = hlC;
-       boxes [19] = bioA;
-       boxes [20] = bioB;
-       boxes [21] = chemA;
-       boxes [22] = chemB;
-       boxes [23] = s3A;
-       boxes [24] = s3B;
-       boxes [25] = s3C;
-       boxes [26] = s4A;
-       boxes [27] = s4B;
-       boxes [28] = s4C;
-       boxes [29] = WGA;
-       boxes [30] = WGB;
-       boxes [31] = WHA;
-       boxes [32] = WHB;
-       boxes [33] = HOAA;
-       boxes [34] = HOAB;
-       boxes [35] = CENTA;
-       boxes [36] = CENTB;
-       boxes [37] = ECON;
-       boxes [38] = HLTH;
-       boxes [39] = HSA;
-       boxes [40] = HSB;
-       boxes [41] = HSCIA;
-       boxes [42] = HSCIB;
-       boxes [43] = COS1A;
-       boxes [44] = COS1B;
-       boxes [45] = COS1C;
-       boxes [46] = CMhlthA;
-       boxes [47] = CMhlthB;
-       boxes [48] = athA;
-       boxes [49] = athB;
-       boxes [50] = techA;
-       boxes [51] = techB;
-       boxes [52] = artA;
-       boxes [53] = artB;
-       boxes [54] = bandA;
-       boxes [55] = bandB;
-       boxes [56] = choirA;
-       boxes [57] = choirB;
-       boxes [58] = danceA;
-       boxes [59] = danceB;
-       boxes [60] = orchA;
-       boxes [61] = orchB;
-       boxes [62] = theaterA;
-       boxes [63] = theaterB;
-       boxes [64] = lang1A;
-       boxes [65] = lang1B;
-       boxes [66] = lang2A;
-       boxes [67] = lang2B;
-       boxes [68] = comm;
-       boxes [69] = TOKA;
-       boxes [70] = TOKB;
-       
-       for(int x = 0; x < boxes.length; x++)
-           boxes[x].setSelected(false);
-
-       
-       
+        for (JCheckBox boxe : boxes) {
+            boxe.setSelected(false);
+        }
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
     {//GEN-HEADEREND:event_jButton1ActionPerformed
@@ -1611,80 +1559,10 @@ public class ViewGUI extends javax.swing.JFrame
     private void jtDataMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_jtDataMouseClicked
     {//GEN-HEADEREND:event_jtDataMouseClicked
        clearDialoge();
-        int rowIndex = jtData.rowAtPoint(evt.getPoint());
+       int rowIndex = jtData.rowAtPoint(evt.getPoint());
        rowSelected = rowIndex+1;
-       JCheckBox [] boxes = new JCheckBox[71];
-       boxes [0] = eng1A;
-       boxes [1] = eng1B;
-       boxes [2] = eng2A;
-       boxes [3] = eng2B;
-       boxes [4] = eng3A;
-       boxes [5] = eng3B;
-       boxes [6] = eng4A;
-       boxes [7] = eng4B;
-       boxes [8] = algA;
-       boxes [9] = algB;
-       boxes [10] = geomA;
-       boxes [11] = geomB;
-       boxes [12] = alg2A;
-       boxes [13] = alg2B;
-       boxes [14] = slA;
-       boxes [15] = slB;
-       boxes [16] = hlA;
-       boxes [17] = hlB;
-       boxes [18] = hlC;
-       boxes [19] = bioA;
-       boxes [20] = bioB;
-       boxes [21] = chemA;
-       boxes [22] = chemB;
-       boxes [23] = s3A;
-       boxes [24] = s3B;
-       boxes [25] = s3C;
-       boxes [26] = s4A;
-       boxes [27] = s4B;
-       boxes [28] = s4C;
-       boxes [29] = WGA;
-       boxes [30] = WGB;
-       boxes [31] = WHA;
-       boxes [32] = WHB;
-       boxes [33] = HOAA;
-       boxes [34] = HOAB;
-       boxes [35] = CENTA;
-       boxes [36] = CENTB;
-       boxes [37] = ECON;
-       boxes [38] = HLTH;
-       boxes [39] = HSA;
-       boxes [40] = HSB;
-       boxes [41] = HSCIA;
-       boxes [42] = HSCIB;
-       boxes [43] = COS1A;
-       boxes [44] = COS1B;
-       boxes [45] = COS1C;
-       boxes [46] = CMhlthA;
-       boxes [47] = CMhlthB;
-       boxes [48] = athA;
-       boxes [49] = athB;
-       boxes [50] = techA;
-       boxes [51] = techB;
-       boxes [52] = artA;
-       boxes [53] = artB;
-       boxes [54] = bandA;
-       boxes [55] = bandB;
-       boxes [56] = choirA;
-       boxes [57] = choirB;
-       boxes [58] = danceA;
-       boxes [59] = danceB;
-       boxes [60] = orchA;
-       boxes [61] = orchB;
-       boxes [62] = theaterA;
-       boxes [63] = theaterB;
-       boxes [64] = lang1A;
-       boxes [65] = lang1B;
-       boxes [66] = lang2A;
-       boxes [67] = lang2B;
-       boxes [68] = comm;
-       boxes [69] = TOKA;
-       boxes [70] = TOKB;
+
+       Student stu = new Student();
         try{
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
@@ -1694,15 +1572,24 @@ public class ViewGUI extends javax.swing.JFrame
                 XSSFCell cell = row.getCell(x+2);
                 if(!df.formatCellValue(cell).equals(""))
                 {
-                    boxes[x].setSelected(true);
+                    stu.classes[x] = true;
                 }
             }
         } catch(Exception e){System.out.
                 println(e + "error");}
         
+        fillBoxes(stu);
+        
         jDialoge.setVisible(true);
     }//GEN-LAST:event_jtDataMouseClicked
 
+    public void fillBoxes(Student s){       
+       for(int x=0;x<s.classes.length;x++)
+       {
+           boxes[x].setSelected(s.classes[x]);
+       }
+    }
+    
     private void eng1AActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_eng1AActionPerformed
     {//GEN-HEADEREND:event_eng1AActionPerformed
         try{
@@ -1975,7 +1862,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(16);
+            XSSFCell cell = row.createCell(18);
             if(slA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -1994,7 +1881,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(17);
+            XSSFCell cell = row.createCell(19);
             if(slB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2013,7 +1900,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(18);
+            XSSFCell cell = row.createCell(20);
             if(hlA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2032,7 +1919,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(19);
+            XSSFCell cell = row.createCell(21);
             if(hlB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2051,7 +1938,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(20);
+            XSSFCell cell = row.createCell(22);
             if(hlC.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2070,7 +1957,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(21);
+            XSSFCell cell = row.createCell(23);
             if(bioA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2089,7 +1976,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(22);
+            XSSFCell cell = row.createCell(24);
             if(bioB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2108,7 +1995,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(23);
+            XSSFCell cell = row.createCell(25);
             if(chemA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2127,7 +2014,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(24);
+            XSSFCell cell = row.createCell(26);
             if(chemB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2146,7 +2033,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(25);
+            XSSFCell cell = row.createCell(27);
             if(s3A.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2165,7 +2052,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(26);
+            XSSFCell cell = row.createCell(28);
             if(s3B.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2184,7 +2071,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(27);
+            XSSFCell cell = row.createCell(29);
             if(s3C.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2203,7 +2090,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(28);
+            XSSFCell cell = row.createCell(30);
             if(s4A.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2222,7 +2109,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(29);
+            XSSFCell cell = row.createCell(31);
             if(s4B.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2241,7 +2128,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(30);
+            XSSFCell cell = row.createCell(32);
             if(s4C.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2260,7 +2147,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(31);
+            XSSFCell cell = row.createCell(33);
             if(WGA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2279,7 +2166,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(32);
+            XSSFCell cell = row.createCell(34);
             if(WGB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2298,7 +2185,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(33);
+            XSSFCell cell = row.createCell(35);
             if(WHA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2317,7 +2204,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(34);
+            XSSFCell cell = row.createCell(36);
             if(WHB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2336,7 +2223,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(35);
+            XSSFCell cell = row.createCell(37);
             if(HOAA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2355,7 +2242,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(36);
+            XSSFCell cell = row.createCell(38);
             if(HOAB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2374,7 +2261,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(37);
+            XSSFCell cell = row.createCell(39);
             if(CENTA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2393,7 +2280,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(38);
+            XSSFCell cell = row.createCell(40);
             if(CENTB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2412,7 +2299,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(39);
+            XSSFCell cell = row.createCell(41);
             if(ECON.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2431,7 +2318,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(40);
+            XSSFCell cell = row.createCell(42);
             if(HLTH.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2450,7 +2337,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(41);
+            XSSFCell cell = row.createCell(43);
             if(HSA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2469,7 +2356,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(42);
+            XSSFCell cell = row.createCell(44);
             if(HSB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2488,7 +2375,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(43);
+            XSSFCell cell = row.createCell(45);
             if(HSCIA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2526,7 +2413,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(45);
+            XSSFCell cell = row.createCell(46);
             if(COS1A.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2545,7 +2432,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(46);
+            XSSFCell cell = row.createCell(47);
             if(COS1B.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2564,7 +2451,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(47);
+            XSSFCell cell = row.createCell(48);
             if(COS1C.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2583,7 +2470,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(48);
+            XSSFCell cell = row.createCell(49);
             if(CMhlthA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2602,7 +2489,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(49);
+            XSSFCell cell = row.createCell(50);
             if(CMhlthB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2621,7 +2508,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(50);
+            XSSFCell cell = row.createCell(51);
             if(athA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2640,7 +2527,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(51);
+            XSSFCell cell = row.createCell(52);
             if(athB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2659,7 +2546,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(52);
+            XSSFCell cell = row.createCell(53);
             if(techA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2678,7 +2565,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(53);
+            XSSFCell cell = row.createCell(54);
             if(techB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2697,7 +2584,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(54);
+            XSSFCell cell = row.createCell(55);
             if(artA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2716,7 +2603,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(55);
+            XSSFCell cell = row.createCell(56);
             if(artB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2735,7 +2622,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(56);
+            XSSFCell cell = row.createCell(57);
             if(bandA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2754,7 +2641,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(57);
+            XSSFCell cell = row.createCell(58);
             if(bandB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2773,7 +2660,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(58);
+            XSSFCell cell = row.createCell(59);
             if(choirA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2792,7 +2679,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(59);
+            XSSFCell cell = row.createCell(60);
             if(choirB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2811,7 +2698,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(60);
+            XSSFCell cell = row.createCell(61);
             if(danceA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2830,7 +2717,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(61);
+            XSSFCell cell = row.createCell(62);
             if(danceB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2849,7 +2736,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(62);
+            XSSFCell cell = row.createCell(63);
             if(orchA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2868,7 +2755,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(63);
+            XSSFCell cell = row.createCell(64);
             if(orchB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2887,7 +2774,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(64);
+            XSSFCell cell = row.createCell(65);
             if(theaterA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2906,7 +2793,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(65);
+            XSSFCell cell = row.createCell(66);
             if(theaterB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2925,7 +2812,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(66);
+            XSSFCell cell = row.createCell(67);
             if(lang1A.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2944,7 +2831,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(67);
+            XSSFCell cell = row.createCell(68);
             if(lang1B.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2963,7 +2850,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(68);
+            XSSFCell cell = row.createCell(69);
             if(lang2A.isSelected())
             {
                 cell.setCellValue(chx);
@@ -2982,7 +2869,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(69);
+            XSSFCell cell = row.createCell(70);
             if(lang2B.isSelected())
             {
                 cell.setCellValue(chx);
@@ -3001,7 +2888,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(70);
+            XSSFCell cell = row.createCell(77);
             if(comm.isSelected())
             {
                 cell.setCellValue(chx);
@@ -3020,7 +2907,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(71);
+            XSSFCell cell = row.createCell(78);
             if(TOKA.isSelected())
             {
                 cell.setCellValue(chx);
@@ -3039,7 +2926,7 @@ public class ViewGUI extends javax.swing.JFrame
             XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
             XSSFSheet sheet = workbook.getSheetAt(0);
             XSSFRow row = sheet.getRow(rowSelected);
-            XSSFCell cell = row.createCell(72);
+            XSSFCell cell = row.createCell(79);
             if(TOKB.isSelected())
             {
                 cell.setCellValue(chx);
@@ -3051,6 +2938,150 @@ public class ViewGUI extends javax.swing.JFrame
 	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
         } catch(Exception e){System.out.println(e);}
     }//GEN-LAST:event_TOKBActionPerformed
+
+    private void precal1AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precal1AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(16);
+            if(precal1A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_precal1AActionPerformed
+
+    private void precal1BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_precal1BActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(17);
+            if(precal1B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_precal1BActionPerformed
+
+    private void lang3AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang3AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(71);
+            if(lang3A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang3AActionPerformed
+
+    private void lang3BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang3BActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(72);
+            if(lang3B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang3BActionPerformed
+
+    private void lang4AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang4AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(73);
+            if(lang4A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang4AActionPerformed
+
+    private void lang4BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang4BActionPerformed
+       try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(74);
+            if(lang4B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang4BActionPerformed
+
+    private void lang5AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang5AActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(75);
+            if(lang5A.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang5AActionPerformed
+
+    private void lang5BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lang5BActionPerformed
+        try{
+            XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("newfile.xlsx")));
+            XSSFSheet sheet = workbook.getSheetAt(0);
+            XSSFRow row = sheet.getRow(rowSelected);
+            XSSFCell cell = row.createCell(76);
+            if(lang5B.isSelected())
+            {
+                cell.setCellValue(chx);
+            }
+            else
+            {
+                cell.setCellValue("");
+            }
+	    workbook.write(new FileOutputStream(new File("newfile.xlsx")));
+        } catch(Exception e){System.out.println(e);}
+    }//GEN-LAST:event_lang5BActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3162,6 +3193,12 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox lang1B;
     private javax.swing.JCheckBox lang2A;
     private javax.swing.JCheckBox lang2B;
+    private javax.swing.JCheckBox lang3A;
+    private javax.swing.JCheckBox lang3B;
+    private javax.swing.JCheckBox lang4A;
+    private javax.swing.JCheckBox lang4B;
+    private javax.swing.JCheckBox lang5A;
+    private javax.swing.JCheckBox lang5B;
     private javax.swing.JLabel lblArts;
     private javax.swing.JLabel lblAth;
     private javax.swing.JLabel lblEng;
@@ -3180,6 +3217,8 @@ public class ViewGUI extends javax.swing.JFrame
     private javax.swing.JCheckBox orchA;
     private javax.swing.JCheckBox orchB;
     private javax.swing.JPanel panChooser;
+    private javax.swing.JCheckBox precal1A;
+    private javax.swing.JCheckBox precal1B;
     private javax.swing.JCheckBox s3A;
     private javax.swing.JCheckBox s3B;
     private javax.swing.JCheckBox s3C;
